@@ -76,3 +76,8 @@ links; card 022 Chrome-vs-Playwright characterisation verified and corrected.
 
 Card 023 names the principle that 014/016/021 were each restating locally.
 Card granularity is now explicitly Claude's call.
+
+## v0.15 — 2026-09-11
+
+First Salesforce cards (024-026): the created-vs-usable gap, knowledge-elicitation
+harnesses, and org hygiene. Superbadge policy question filed as issue.
