@@ -50,6 +50,8 @@ Do not try to write polished section prose before the cards exist. That produces
 
 **Prefer many narrow cards over few stuffed ones.** When two ideas could plausibly share a card, file two and cross-link them. Narrow cards retrieve precisely; stuffed cards match everything vaguely and nothing well. Split on differing audience, type, section, or resolution state. See `cards/README.md`.
 
+**Granularity is Claude's call — decide it, don't ask.** Whether something is one card or three, whether a principle deserves its own umbrella card, whether an idea folds into an existing card: make the call and say what you decided and why. Dave has explicitly delegated this: *"You should always make the decision on card splitting because you have access to all of the cards — you are my librarian."* The reasoning is sound — these decisions depend on what's already in the corpus, what would collide, and what's findable, and only the session holding all the cards can weigh that. Asking pushes a judgment onto someone with less information than you.
+
 ## Don't Recreate What Already Exists
 
 [Anthropic Academy](https://anthropic.skilljar.com) is good, and it covers the lecture register well — high-level, conceptual, not hands-on. There is no point rewriting it.

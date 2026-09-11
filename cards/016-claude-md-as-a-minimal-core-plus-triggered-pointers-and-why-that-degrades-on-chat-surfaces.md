@@ -23,7 +23,7 @@ Card 014 showed that a standing instruction to re-check external state mostly lo
 - **"Always check X"** — a standing vigilance instruction with no trigger. Competes with the model's default posture on every turn and usually loses.
 - **"When doing Y, read path Z"** — a concrete action bound to a recognisable condition. Claude Code reads local files cheaply and reliably, and "open this path" is unambiguous.
 
-**Triggered concrete action beats standing vigilance.** That's the reusable form of the lesson.
+**Triggered concrete action beats standing vigilance.** That's the reusable form of the lesson, and the *trigger* lever in card 023.
 
 ### The same pattern is weaker on chat surfaces
 

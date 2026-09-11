@@ -29,6 +29,8 @@ The general principle is bigger than git:
 
 > **Some classes of drift can't be prompted away, only designed away.**
 
+That's the local form of a general principle — see card 023.
+
 If a failure mode requires the model to remember to check something on every turn, an instruction is the wrong tool. Either close the gap structurally (keep the work in-session), make the check deterministic (a hook, which the harness runs rather than the model choosing to), or accept that you'll have to say it out loud each time.
 
 Card 017 is the deterministic version of this fix: a `SessionStart` hook on the `compact` matcher injects real git state as context, so the harness supplies the truth rather than the model remembering to ask for it.

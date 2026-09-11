@@ -71,3 +71,8 @@ feedback loop as the general solution to state divergence.
 
 Source-citation rule added. Cards 017, 019, 022 retrofitted with documentation
 links; card 022 Chrome-vs-Playwright characterisation verified and corrected.
+
+## v0.14 — 2026-09-11
+
+Card 023 names the principle that 014/016/021 were each restating locally.
+Card granularity is now explicitly Claude's call.

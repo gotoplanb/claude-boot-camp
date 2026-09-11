@@ -45,4 +45,4 @@ They compose. A constraint harness shrinks the space of things that can go wrong
 
 Both get called "guardrails," which hides that they fail differently. A constraint harness can't tell you the feature is broken — Tailwind classes are perfectly consistent in a page that doesn't work. A verification harness can't stop the model producing twelve different naming conventions that all pass the tests.
 
-The practical tell that you're missing a constraint harness: **you're writing increasingly detailed instructions about how to do something.** That's the same losing argument as card 014's standing-vigilance instruction. When you notice it, stop adding prose and go find the tool that makes the wrong answer unavailable.
+The practical tell that you're missing a constraint harness: **you're writing increasingly detailed instructions about how to do something.** That's the same losing argument as card 014's standing-vigilance instruction. When you notice it, stop adding prose and go find the tool that makes the wrong answer unavailable. Card 023 names this pattern and its three levers.
