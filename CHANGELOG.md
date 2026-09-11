@@ -40,3 +40,8 @@ distribution tradeoff (curated subset in a Project vs full corpus over MCP).
 
 Licensed CC BY-SA 4.0. Card 013 records the reasoning (ShareAlike over
 NonCommercial, because the audience is paid consultants).
+
+## v0.8 — 2026-09-11
+
+Cards 014-015: state divergence (the model trusts its snapshot over re-querying)
+and disposition drift across model versions. Card 010 partially answered.

@@ -19,6 +19,8 @@ Card 008 has a partial answer — relevance still beats volume, but size alone i
 
 These want a real experiment, not a plausible-sounding answer. They're the kind of question an LLM will confidently pattern-match and get wrong.
 
+**Partially answered (2026-09-11), see card 014.** One sub-question is now settled: *can a standing `CLAUDE.md` instruction fix staleness?* No — an instruction to "always re-verify external state" competes with the model's default trust in its own snapshot on every turn, and mostly loses. That class of drift has to be closed structurally or made deterministic with a hook, not prompted away. The sizing questions above remain open.
+
 **2. When should hooks be used?**
 
 Barely explored. Open sub-questions:
