@@ -102,3 +102,8 @@ discernment-vs-reproducibility boundary.
 
 Cards 034-035: Claudeforce (verified against the official 2026-08-26 release)
 and the subscription-vs-metered cost-shape argument.
+
+## v0.20 — 2026-09-11
+
+Card 036: the trust tax applies per data flow, not per company. Introduces a
+claim ledger for cards mixing verified facts, inferences, and predictions.
