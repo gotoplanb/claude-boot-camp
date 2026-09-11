@@ -30,6 +30,8 @@ Barely explored. Open sub-questions:
 - What's the equivalent story *outside* Claude Code — on claude.ai, in Projects, on mobile? Is there one, or is determinism a Claude Code-only capability?
 - Where's the line at which a hook becomes a worse version of a git pre-commit hook or a CI check?
 
+**Partially answered (2026-09-11), see card 017.** One concrete use case is settled: re-injecting *dynamic* state after a context compaction, via `SessionStart` with the `compact` matcher. That also sharpens the general rule — hooks are where determinism lives, so move a check from instruction to harness whenever "sometimes the model forgets" is unacceptable. Still open: the wider use-case map, and whether determinism has any equivalent outside Claude Code.
+
 ## Why this matters
 
 Both questions are exactly what a center-of-excellence lead will be asked, and both are places where confident-sounding wrong answers are cheap to produce. Holding them as an explicit open card — rather than letting a plausible answer get carded as fact — is the verification discipline working as intended.

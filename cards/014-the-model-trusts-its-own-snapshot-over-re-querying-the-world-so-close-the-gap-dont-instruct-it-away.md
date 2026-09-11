@@ -31,4 +31,6 @@ The general principle is bigger than git:
 
 If a failure mode requires the model to remember to check something on every turn, an instruction is the wrong tool. Either close the gap structurally (keep the work in-session), make the check deterministic (a hook, which the harness runs rather than the model choosing to), or accept that you'll have to say it out loud each time.
 
+Card 017 is the deterministic version of this fix: a `SessionStart` hook on the `compact` matcher injects real git state as context, so the harness supplies the truth rather than the model remembering to ask for it.
+
 This is the practical, load-bearing version of "write better instructions" advice — which is often just an invitation to keep losing the same argument more verbosely. See card 015 for the sibling case, where the mismatch is between the model and its *previous version* rather than the world.

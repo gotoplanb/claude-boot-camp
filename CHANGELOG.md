@@ -45,3 +45,8 @@ NonCommercial, because the audience is paid consultants).
 
 Cards 014-015: state divergence (the model trusts its snapshot over re-querying)
 and disposition drift across model versions. Card 010 partially answered.
+
+## v0.9 — 2026-09-11
+
+Cards 016-017: minimal-core CLAUDE.md with triggered pointers, and re-injecting
+state after compaction. Cards 010 and 014 updated with cross-references.
