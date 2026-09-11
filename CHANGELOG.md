@@ -86,3 +86,9 @@ harnesses, and org hygiene. Superbadge policy question filed as issue.
 
 Card 025 rewritten around a policy-safe elicitation protocol: solve manually,
 rebuild from your own notes in a clean org, diff. Closes the superbadge question.
+
+## v0.17 — 2026-09-11
+
+Cards 027-031: artifacts. The Projects gap, Claude Code artifact publishing and
+its availability gates, viewer-account connector execution, the two data modes
+(and the permissions inversion), and ad-hoc reporting for Salesforce.
