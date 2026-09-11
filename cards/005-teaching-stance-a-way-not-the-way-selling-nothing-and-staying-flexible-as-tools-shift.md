@@ -1,8 +1,8 @@
 # Teaching Stance — *A* Way Not *The* Way, Selling Nothing, and Staying Flexible as the Tools Shift
 
 **Source:** Claude Boot Camp planning session, 2026-09-11 — Dave's framing for the eventual front matter.
-**Type:** concept
-**Verified:** n/a — project decision, not a product claim. `[confirm-this: the Verified axis was designed for factual claims about products; decision cards like this one don't fit it. Worth deciding whether the schema needs a 'decision' value.]`
+**Type:** decision
+**Verified:** n/a — a stance, not a claim about a product. Nothing here to run or confirm.
 **Relevant to:** general (front matter for the boot camp / book / deck)
 
 ## Content

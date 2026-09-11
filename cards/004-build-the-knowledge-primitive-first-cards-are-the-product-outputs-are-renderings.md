@@ -1,7 +1,7 @@
 # Build the Knowledge Primitive First — The Cards Are the Product, Every Output Is Just a Rendering
 
 **Source:** Claude Boot Camp planning session, 2026-09-11. Generalizes the method proven on *Geography as Destiny*.
-**Type:** pattern
+**Type:** preference
 **Verified:** ran-it — the book has run this method to 340+ cards, producing an epub, a website, chapters, figures, and an MCP server from one card corpus.
 **Relevant to:** general (the method the whole project rests on)
 

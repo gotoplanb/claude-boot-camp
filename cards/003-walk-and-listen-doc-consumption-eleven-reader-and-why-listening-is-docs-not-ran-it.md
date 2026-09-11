@@ -1,7 +1,7 @@
 # Walk-and-Listen Documentation Consumption — Eleven Reader, a Local TTS Fallback, and Why Listening Counts as `docs` Not `ran-it`
 
 **Source:** Claude Boot Camp planning session, 2026-09-11, discussing how Dave actually prefers to consume documentation.
-**Type:** pattern
+**Type:** preference
 **Verified:** docs — the tool recommendation has not been road-tested yet. `[confirm-this: has Eleven Reader actually been used on a real doc set, and does the audio hold up for dense technical prose with code blocks?]`
 **Relevant to:** general (affects how learning happens across every section)
 

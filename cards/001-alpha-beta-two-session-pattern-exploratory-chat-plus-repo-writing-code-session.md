@@ -1,7 +1,7 @@
 # The Two-Session Pattern — Separate the Exploratory Chat from the Repo-Writing Code Session
 
 **Source:** Dave's *Geography as Destiny* working model (Alpha = Claude Code research assistant, Beta = Claude iOS seminar partner), carried over to Claude Boot Camp in the planning session of 2026-09-11.
-**Type:** pattern
+**Type:** preference
 **Verified:** ran-it — Dave has run this split for months on the book; it produced 340+ reference cards.
 **Relevant to:** 2 (operating Claude products), 5 (building with Claude Code), general
 

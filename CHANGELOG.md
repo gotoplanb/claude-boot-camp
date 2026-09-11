@@ -18,3 +18,9 @@ for the eventual front matter.
 
 First six cards filed (the planning session itself, carded). Removed framing.md —
 that content is now card 005. Added a dictation proper-noun glossary to CLAUDE.md.
+
+## v0.4 — 2026-09-11
+
+Card schema: added `preference` and `decision` types and `n/a` verification, so
+personal working style is never presented as verified fact. Reclassified the first
+six cards; three are now preferences, one a decision.

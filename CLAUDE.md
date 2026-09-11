@@ -87,6 +87,16 @@ Dave often consumes documentation **while walking**, via [Eleven Reader](https:/
 
 Relevant to carding: **listening to docs is `docs`, not `ran-it`.** Audio is an input channel, not verification.
 
+## Opinion vs. Fact (the distinction that matters most)
+
+Expect roughly **half the cards to be opinion** — Dave's preferences, working style, "best practices." The other half are verifiable: code examples, product behavior, implementation details. Never let the two blur.
+
+- `Type: preference` — how Dave chooses to work; someone else could reasonably do the opposite. Write in first person, own it as opinion.
+- `Type: decision` — a settled project stance. `Verified: n/a`.
+- Everything else is a claim about the world, and must be verifiable.
+
+The fields combine: `preference` + `ran-it` is a battle-tested habit worth weighting; `preference` + `inferred` is an untested idea — try it, don't teach it. **When unsure whether something is a pattern or a preference, call it a preference.** Overclaiming is the more expensive error, and it's the one the project's stance (*a way, not the way*) exists to prevent.
+
 ## Verification Discipline (the most important rule)
 
 Because much of this covers products Dave hasn't used yet, **every card must be honest about how it was learned.** Each card carries a `Verified:` field:
@@ -94,7 +104,10 @@ Because much of this covers products Dave hasn't used yet, **every card must be 
 - `ran-it` — Dave (or Claude, in a real session) actually executed this and observed the result. Highest confidence.
 - `docs` — read in official documentation, not yet run. Plausible but unconfirmed in practice.
 - `inferred` — reasoned from related behavior. Lowest confidence. Must be confirmed before it reaches a lab.
+- `n/a` — nothing to verify: a `decision`, or a pure matter of taste.
 - `confirm-this` — explicitly flagged as a question to resolve.
+
+Always give a short reason after the value, not the bare word: `**Verified:** ran-it — default workflow on the book for ~8 months`.
 
 **A lab may only be built from `ran-it` cards.** Teaching something you haven't run is how a curriculum gets confidently wrong in front of a room. If a lab needs a step that is only `docs` or `inferred`, run it first and upgrade the card.
 
