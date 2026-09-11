@@ -89,6 +89,14 @@ Dave often consumes documentation **while walking**, via [Eleven Reader](https:/
 
 Relevant to carding: **listening to docs is `docs`, not `ran-it`.** Audio is an input channel, not verification.
 
+## Cite Sources — Link Them
+
+If a claim came from documentation, **link the documentation** in the `Source:` line or inline. A reader months later needs somewhere to start when checking whether it's still true.
+
+Cite what you *actually read*. If it came from a cached reference, a subagent research pass, or a conversation rather than the live page, say so and also link the canonical source. Claiming "verified against the docs" when you read a summary corrodes the whole `Verified` field.
+
+A link also answers the question Dave keeps asking: **is this official product behaviour, an architecture pattern, or a preference?** No link plus `Type: preference` reads correctly as opinion; no link on a factual claim reads as sloppy.
+
 ## Opinion vs. Fact (the distinction that matters most)
 
 Expect roughly **half the cards to be opinion** — Dave's preferences, working style, "best practices." The other half are verifiable: code examples, product behavior, implementation details. Never let the two blur.

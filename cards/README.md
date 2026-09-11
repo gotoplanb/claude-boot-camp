@@ -23,6 +23,22 @@ Expect 100+ of these before a section gets seriously written.
 [Why it earns a place in the curriculum — what it lets someone do, or what it saves them from.]
 ```
 
+## Cite your sources — link them
+
+**If a claim came from documentation, link the documentation.** A reader six months from now needs to check whether it's still true, and a bare assertion gives them nowhere to start.
+
+Put links in the `Source:` line, inline in the body where a specific claim needs backing, or both:
+
+```markdown
+**Source:** [Anthropic — hooks reference](https://code.claude.com/docs/en/hooks.md),
+verified 2026-09-11. Behaviour confirmed against the "what survives compaction"
+table in [memory.md](https://code.claude.com/docs/en/memory.md).
+```
+
+**Cite what you actually read, not what you assume backs it.** If the claim came from a cached reference, a subagent's research pass, or a conversation rather than the live page, say so and *also* link the canonical source. "Verified against the docs" when you actually read a summary is the kind of small dishonesty that makes the whole `Verified` field untrustworthy.
+
+This matters most for the distinction Dave keeps asking about: **is this an official product behaviour, an architecture pattern, or someone's preference?** A link answers that instantly. No link, `Type: preference` — those are opinions and should read as such.
+
 ## Opinion vs. fact — the distinction that matters most
 
 Expect roughly **half these cards to be opinions**: Dave's preferences, working style, and "best practices." The other half are verifiable — code examples, product behavior, specific implementation details.

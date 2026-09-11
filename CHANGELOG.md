@@ -66,3 +66,8 @@ inference. Card 018 reframed: Fable friction is fit mismatch, not incapability.
 
 Cards 021-022: the constraint/verification harness split, and the observability
 feedback loop as the general solution to state divergence.
+
+## v0.13 — 2026-09-11
+
+Source-citation rule added. Cards 017, 019, 022 retrofitted with documentation
+links; card 022 Chrome-vs-Playwright characterisation verified and corrected.

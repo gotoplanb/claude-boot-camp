@@ -1,6 +1,7 @@
 # Re-Injecting State After Compaction — `SessionStart` with the `compact` Matcher, and Why CLAUDE.md Doesn't Need It
 
-**Source:** Dave, Claude Boot Camp session 2026-09-11, wanting a post-compaction hook to re-read CLAUDE.md on sessions he leaves open for weeks. Mechanics corrected by Beta, then verified against the official Claude Code docs (hooks, memory, context-window) via a research pass in the same session.
+**Source:** Dave, Claude Boot Camp session 2026-09-11, wanting a post-compaction hook to re-read CLAUDE.md on sessions he leaves open for weeks. Mechanics corrected by Beta, then verified 2026-09-11 against the official Claude Code docs via a research pass:
+[hooks reference](https://code.claude.com/docs/en/hooks.md) · [hooks guide](https://code.claude.com/docs/en/hooks-guide.md) · [memory](https://code.claude.com/docs/en/memory.md) · [context window](https://code.claude.com/docs/en/context-window.md). The "CLAUDE.md is re-injected from disk" and "SessionStart `compact` output is added to the compacted context" claims both come from the *what survives compaction* table in those last two.
 **Type:** pattern
 **Verified:** docs — every claim below confirmed in official documentation at code.claude.com/docs. **Not yet run** in Dave's setup. `[confirm-this: needs a real weeks-long session with multiple compactions before this backs a lab.]`
 **Relevant to:** 5 (building with Claude Code), 2 (operating Claude products)

@@ -31,13 +31,26 @@ The reason it sticks is the same as card 016's: **it isn't standing vigilance, i
 
 The other half is cost. Making observation a single tool call away means it happens; if checking a trace required leaving the session, it wouldn't. **Watchtower is the git-log drift problem solved by making "go observe reality" as easy as a tool call, instead of something the model has to remember to do on its own initiative.**
 
-## Claude in Chrome vs. a browser tool inside the session
+## Which browser tool — and the correction worth knowing
 
-Worth distinguishing rather than treating as equivalent. `[confirm-this: characterisation pending verification against official docs — do not treat as settled.]`
+Verified 2026-09-11 against [Use Claude Code with Chrome](https://code.claude.com/docs/en/chrome), [Computer use](https://platform.claude.com/docs/en/build-with-claude/computer-use.md), and [Playwright MCP](https://playwright.dev/docs/getting-started-mcp).
 
-The property that matters for this loop is **whether the observation and the code-writing share one context**. Seeing the bug and writing the fix in the same breath is the point; an observation made in a separate agent has to be carried back by hand, which reintroduces exactly the gap this loop exists to close.
+**Claude in Chrome is not a separate standalone agent.** It's a [browser extension](https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn) that Claude Code drives over native messaging and the Chrome DevTools Protocol — you invoke it from the same session (`--chrome` / `/chrome`) and the docs pitch it precisely as testing and debugging "without switching contexts." It's context-isolated only in the sense that any tool is: it doesn't share Claude's reasoning, it's something the session *uses*, like Bash.
 
-*(Session note: the Docker MCP Playwright server registered but exposed no tools in a live attempt on 2026-09-11 — driving a local Chrome via Playwright from the shell worked instead. Verify your browser path actually loads before depending on it.)*
+The distinction that actually matters for "see it with your own eyeballs":
+
+| | **Claude in Chrome** | **Playwright MCP** |
+|---|---|---|
+| First-party? | Yes, Anthropic | No — [Microsoft maintains it](https://github.com/microsoft/playwright-mcp) |
+| How Claude perceives the page | **Visually** — screenshots | Primarily the **accessibility tree / DOM** |
+| Good for | Design review, UI debugging, "does this look right" | Form automation, deterministic structural assertions |
+| Needs | Extension installed, Chrome running, `/login` auth (not API key) | A browser instance you provide |
+
+So for Dave's stated goal — *see it with your own computer eyeballs* — **Claude in Chrome is the closer fit**, not Playwright. That inverts the intuition that the MCP route is automatically better because it's "in the session." Both are in the session; they differ in what the model perceives.
+
+The other first-party option is [Computer Use](https://platform.claude.com/docs/en/build-with-claude/computer-use.md) — vision-based, works on native apps too, less mature for browser work.
+
+*(Session note, `ran-it`: the Docker MCP Playwright server registered but exposed **zero tools** on 2026-09-11; driving local Chrome via Playwright from the shell worked, and screenshots read back fine as images — so "Playwright can't be visual" is too strong a generalisation, it's a statement about the MCP server's default snapshot mode. Verify whichever browser path you pick actually loads before depending on it.)*
 
 ## Why this matters
 
