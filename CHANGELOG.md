@@ -35,3 +35,8 @@ default as a labelled preference, and an open thread on hooks and context habits
 
 Cards 011-012: passive context vs active retrieval as a unifying lens, and the
 distribution tradeoff (curated subset in a Project vs full corpus over MCP).
+
+## v0.7 — 2026-09-11
+
+Licensed CC BY-SA 4.0. Card 013 records the reasoning (ShareAlike over
+NonCommercial, because the audience is paid consultants).

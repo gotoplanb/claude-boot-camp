@@ -41,6 +41,19 @@ curriculum.md the working outline
 CHANGELOG.md  version history
 ```
 
+## License
+
+[CC BY-SA 4.0](LICENSE) — Creative Commons Attribution-ShareAlike 4.0 International.
+
+In plain terms:
+
+- **Use them.** Copy cards verbatim, drop them in a Claude Project, quote them, teach from them — including at work, on paid client engagements. That's the point.
+- **Adapt them.** Remix, rewrite, build on them.
+- **Credit and link back** to [davestanton.com/claude](https://davestanton.com/claude), and say if you changed anything.
+- **Share alike.** Anything you build from this carries the same license, so it stays as open as you found it.
+
+That last clause is deliberate. It doesn't forbid selling, it makes reselling pointless: package these up and charge for them, and your buyers are free to redistribute the package for nothing. Same mechanism the GPL uses, applied to prose.
+
 ## Status
 
 Early. The structure is in place; the cards are being written.
