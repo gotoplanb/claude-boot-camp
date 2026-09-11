@@ -107,3 +107,8 @@ and the subscription-vs-metered cost-shape argument.
 
 Card 036: the trust tax applies per data flow, not per company. Introduces a
 claim ledger for cards mixing verified facts, inferences, and predictions.
+
+## v0.21 — 2026-09-11
+
+Cards 037-038: Claude Tag, and the remote-only MCP constraint across hosted
+surfaces.

@@ -33,7 +33,7 @@ That's arguably the right security design (no credential leakage, no privilege e
 ## Related limits
 
 - A connector-backed artifact **can't be shared to a public link on any plan.** On Pro/Max — where a public link is the only sharing option (card 028) — that means it stays private to you, full stop.
-- Only connectors from your claude.ai account qualify. **Local MCP servers from `.mcp.json` can supply data while Claude builds the page, but the published page can't call them.**
+- Only connectors from your claude.ai account qualify. **Local MCP servers from `.mcp.json` can supply data while Claude builds the page, but the published page can't call them.** This is a general rule across hosted surfaces, not an artifact quirk — see card 038.
 - Orgs can disable this independently of artifacts, via an **Enable artifact connectors** toggle.
 
 ## Why this matters
