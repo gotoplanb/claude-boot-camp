@@ -30,3 +30,8 @@ six cards; three are now preferences, one a decision.
 Cards 007-010 from the Claude Projects seminar session: Projects mechanics
 (verified against official docs), Projects vs CLAUDE.md, the local-tooling
 default as a labelled preference, and an open thread on hooks and context habits.
+
+## v0.6 — 2026-09-11
+
+Cards 011-012: passive context vs active retrieval as a unifying lens, and the
+distribution tradeoff (curated subset in a Project vs full corpus over MCP).
