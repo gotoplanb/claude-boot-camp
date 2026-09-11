@@ -83,6 +83,19 @@ Flag uncertainty inline too: `[confirm-this: does this apply on the Team plan?]`
 
 `pattern` vs `preference`: a pattern is a technique that demonstrably works and that most people would benefit from. A preference is how *Dave* likes to work, where someone else could reasonably do the opposite. When in doubt, call it a preference — overclaiming is the more expensive error.
 
+## One idea per card — split rather than stuff
+
+**When two ideas could plausibly share a card, file two.** Narrow beats broad, and the tie-breaker is retrieval: a stuffed card matches many searches vaguely and none precisely, so it surfaces when it shouldn't and gets skimmed when it should have been read.
+
+Split when the candidates differ in any of:
+
+- **Who's searching for it** — different questions should reach different cards
+- **Type** — a `gotcha` and a `preference` don't belong in one head matter
+- **Section** — material for §5 and §3 serves different readers
+- **How they resolve** — one may be settled while the other stays open
+
+Cross-link the halves (`see card NNN`) so the connecting idea isn't lost. Related cards that point at each other are strictly better than one card that contains both.
+
 ## Naming
 
 `NNN-short-description.md` — sequential as encountered. The number is for uniqueness; the description is for scanning. **Do not renumber to group by topic** — cross-references would break, and grouping is what sections are for.

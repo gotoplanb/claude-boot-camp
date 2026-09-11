@@ -48,6 +48,8 @@ This project follows the same method as *Geography as Destiny*: **accumulate ref
 
 Do not try to write polished section prose before the cards exist. That produces confident, plausible, unverified curriculum — the exact failure this method is designed to prevent.
 
+**Prefer many narrow cards over few stuffed ones.** When two ideas could plausibly share a card, file two and cross-link them. Narrow cards retrieve precisely; stuffed cards match everything vaguely and nothing well. Split on differing audience, type, section, or resolution state. See `cards/README.md`.
+
 ## Don't Recreate What Already Exists
 
 [Anthropic Academy](https://anthropic.skilljar.com) is good, and it covers the lecture register well — high-level, conceptual, not hands-on. There is no point rewriting it.
