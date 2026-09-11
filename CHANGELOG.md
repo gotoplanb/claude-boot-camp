@@ -117,3 +117,8 @@ surfaces.
 
 Cards 039-040: the blast-radius question (ambient vs scoped credentials) and the
 remote-control tunnel pattern.
+
+## v0.23 — 2026-09-11
+
+Cards 041-042: the small-team secrets pattern and its support-burden ceiling,
+and what centralizing costs in attribution. Card 039 open question resolved.

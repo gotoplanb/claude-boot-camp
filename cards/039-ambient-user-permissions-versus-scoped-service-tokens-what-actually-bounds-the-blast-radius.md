@@ -41,9 +41,9 @@ The reasoning trace is the model's account of itself. That's useful, and it is n
 
 This matters more, not less, when you hold admin rights elsewhere — the person with the broadest access is the one who most needs to be able to prove what happened.
 
-## Open question
+## How the secrets are actually managed
 
-**How the secrets are actually managed is unresolved** — Vault, 1Password CLI, plain env files, something else. The hygiene rules above are surface-agnostic, but the workflow around rotation and scoping depends on the answer. `[confirm-this]`
+**Answered — see card 041.** `.env.example` committed per repo, the real `.env` in a password manager scoped to the project's people, and individual personal access tokens swapped in for systems where the log should name a human. Card 042 covers what happens to that last property when the approach outgrows a small team.
 
 ## Why this matters
 
