@@ -56,6 +56,28 @@ So where a topic's **lecture** beat is already covered well somewhere else, the 
 
 **Labs stay original.** They have to be — a lab is by definition something actually run, and that's the part no existing course provides. The value this project adds is the hands-on half plus the judgment about what's worth doing at all, not a re-narration of the concepts.
 
+## Dave Dictates — Expect Transcription Errors in Proper Nouns
+
+Much of Dave's input is voice-to-text. Speech recognition handles the prose fine and mangles exactly the words that matter most: product names, file names, model names. **Silently correct these and keep going — don't ask about an obvious mistranscription.**
+
+| He means | Often appears as |
+|---|---|
+| Claude for iOS | Quadfly OS, Claude Freyos, Cloud fly OS |
+| Claude Code | quiet code, cloud code |
+| CLAUDE.md | Claude MD, Claude dot markdown, cloud dot MD |
+| `<anything>.md` | "\<anything\> dot markdown" |
+| Sonnet / Opus / Haiku | sonic, opis, haiku (usually fine) |
+| MCP | MCP, empty P, M C P |
+| Anthropic | anthropic, and thropic |
+| Salesforce / Heroku | sales force, heroic |
+| Orginator | originator, orchestrator |
+
+Add rows as new ones show up — this is meant to grow. If a term is going to be said constantly and transcribes badly, consider *renaming the thing* (the book's sessions are Alpha/Beta/Charlie precisely because NATO-alphabet names survive dictation).
+
+When a mistranscription is genuinely ambiguous and the choice changes what you'd do, ask. When context makes it obvious, just fix it.
+
+See card 006 for the full treatment, including preprocessing options.
+
 ## Learning Inputs
 
 Dave often consumes documentation **while walking**, via [Eleven Reader](https://elevenreader.io) (import a URL or paste text, listen on the go). No pipeline needed for casual use. If batch listening ever becomes worth automating: scrape doc pages to markdown and either hit the ElevenLabs API per page, or reuse the local Piper TTS endpoint (`POST /tts`) from the `conduct` repo for a free/local option at lower voice quality.
