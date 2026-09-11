@@ -2,7 +2,7 @@
 
 **Source:** Dave asked which companies and use cases Cowork actually fits, Claude Boot Camp session 2026-09-11 — steelmanning rather than dismissing. Verified against [Making Claude Cowork ready for enterprise](https://claude.com/blog/cowork-for-enterprise), [role-based permissions](https://support.claude.com/en/articles/13930458-set-up-role-based-permissions-on-enterprise-plans), and the [Cowork Enterprise Admin Guide](https://claude.com/resources/tutorials/claude-cowork-enterprise-administrator-guide).
 **Type:** product-behavior
-**Verified:** `docs` for everything below **except** the authentication model, which two searches failed to establish — see the open question. **Not run.**
+**Verified:** `docs` throughout. The authentication model was unresolved when this card was written and is now answered — see the closing section and card 046. **Not run.**
 **Relevant to:** 2 (operating Claude products), 3 (administering), 1 (foundational concepts)
 
 ## The data point that answers the question
@@ -48,11 +48,13 @@ SRE, platform, and infra tooling built for your own team is close to the canonic
 | Access control | Solved for you, centrally | Chosen by the person who understands the blast radius |
 | Failure if misapplied | Deep access granted broadly | Every team reinventing access control badly |
 
-## Open question — and it's the crux
+## How it authenticates — the crux, now answered
 
-**How Cowork authenticates to connected systems is not documented in anything I could find.** As the signed-in user, with their ambient permissions? Or with separately-configured connector credentials?
+The question this card originally left open: does Cowork act as the signed-in user with their ambient permissions, or with separately-configured connector credentials?
 
-Two searches didn't settle it, and it's precisely the question card 039 turns on. The existence of org-wide per-tool connector controls *hints* at managed connector credentials rather than pure user impersonation — but that's inference, not evidence. **Do not repeat either version as fact.** `[confirm-this — see issue #7]`
+**As the user — see card 046.** The connectors docs state that Claude *"mirrors your existing permissions"* and that restricting actions in Claude *"never grants more access than the source system permits — it only narrows it."* Since Cowork uses the same connectors, the connector path is **user-permission mirroring**, not managed service credentials. The per-tool admin controls narrow *what* it will do, not *whose* access it does it with.
+
+Still open: whether a **custom or enterprise MCP connector** can be given its own credential, and how Cowork's **local file access** is scoped. `[confirm-this — issue #7]`
 
 ## Why this matters
 

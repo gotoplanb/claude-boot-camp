@@ -137,3 +137,9 @@ drafted with step 3 gated pending a real run.
 
 Card 045: who Cowork is actually for. Cowork auth model still unresolved —
 filed as issue #7 rather than guessed.
+
+## v0.27 — 2026-09-11
+
+Cards 046-047: the two access models (connectors mirror you, agent identity is
+its own), and Chat vs Cowork by task shape. Issue #7 substantially answered;
+cards 037/039/045 updated.

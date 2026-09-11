@@ -26,6 +26,10 @@ An Access bundle is *"a named set of credentials, repository grants, and instruc
 - **Plugins** (bundles of skills) attach to the same bundle, *"so the credential arrives with directions for using it."* That pairing is a nice bit of design: access and instructions travel together rather than the model having a key and no idea when to use it.
 - The preset Connect buttons **aren't the full set** — *"Any app with an API can be connected"* via **Custom tool**, including a custom MCP server (card 038).
 
+## It runs on agent identity, not yours
+
+Worth naming explicitly, because it's the opposite of how connectors work: in Claude Tag, *"Claude isn't acting on behalf of a single user. It has its own account in each system it touches."* Per-system service accounts, provisioned by admins, scoped per channel. See card 046 for the full comparison — this is the single most consequential difference between Claude Tag and a connector-based surface.
+
 ## The billing split, which is easy to miss
 
 - **Channel and thread work** draws from *"a usage balance, an amount in your organization's billing currency that an Owner funds."*
