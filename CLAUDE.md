@@ -10,6 +10,23 @@ A hands-on curriculum for people leading Claude adoption: center-of-excellence l
 
 It is also **Dave's own learning vehicle**. A large share of the material covers Anthropic products and surfaces he does not use day to day. That is the point: the curriculum is built by learning the thing, doing it, and writing down what actually happened.
 
+## What We're Actually Building (read this before optimizing anything)
+
+**The cards are the product. Everything else is a rendering of them.**
+
+The real work is building a knowledge primitive — a repeatable way to create, document, and synthesize what's been learned. The boot camp is one output. A conference deck, an MCP server, a book, a client workshop are others. All of them get generated later from whatever has accumulated.
+
+So: **do not optimize for an output format up front.** If a decision makes the cards better but the boot camp slightly harder to assemble, make the cards better. Format is downstream and cheap; the underlying material is the expensive part.
+
+## Working Style
+
+**Iterative and tangent-following, not linear.** Follow whatever topic is interesting or useful right now, document it, move on. Do not work through the six sections in order, and do not build things for the sake of completeness.
+
+- **For products Dave already knows well** (Claude Code, Claude.ai/chat): mostly carding existing knowledge — get what's in his head onto cards.
+- **For products he uses less**: approach as a consultant/architect first. Ask what the use cases and the actual value are, and use that to decide whether it's worth implementing at all. Not everything deserves a lab.
+
+**Starting point:** Claude Code and Claude.ai/chat — the two with the most hands-on experience — then follow tangents from there.
+
 ## Teaching Model
 
 Every topic is roughly **one hour**, in three beats:
@@ -30,6 +47,20 @@ This project follows the same method as *Geography as Destiny*: **accumulate ref
 - When there are enough cards in an area, the section gets drafted/rewritten from them. Sections are **continually rewritten** as cards accumulate — they are never "done" early.
 
 Do not try to write polished section prose before the cards exist. That produces confident, plausible, unverified curriculum — the exact failure this method is designed to prevent.
+
+## Don't Recreate What Already Exists
+
+[Anthropic Academy](https://anthropic.skilljar.com) is good, and it covers the lecture register well — high-level, conceptual, not hands-on. There is no point rewriting it.
+
+So where a topic's **lecture** beat is already covered well somewhere else, the lecture is allowed to be a **pointer**: "go read/watch X — here's why it matters, and here's what it means for your situation." The card records that it was learned by reading or watching rather than running (`Verified: docs`).
+
+**Labs stay original.** They have to be — a lab is by definition something actually run, and that's the part no existing course provides. The value this project adds is the hands-on half plus the judgment about what's worth doing at all, not a re-narration of the concepts.
+
+## Learning Inputs
+
+Dave often consumes documentation **while walking**, via [Eleven Reader](https://elevenreader.io) (import a URL or paste text, listen on the go). No pipeline needed for casual use. If batch listening ever becomes worth automating: scrape doc pages to markdown and either hit the ElevenLabs API per page, or reuse the local Piper TTS endpoint (`POST /tts`) from the `conduct` repo for a free/local option at lower voice quality.
+
+Relevant to carding: **listening to docs is `docs`, not `ran-it`.** Audio is an input channel, not verification.
 
 ## Verification Discipline (the most important rule)
 
@@ -77,6 +108,15 @@ Match the voice of davestanton.com:
 - Define by what it's NOT; scope by exclusion.
 - No marketing speak, no hype, no emoji. Ever.
 - Honest about limits. "I haven't run this yet" is always better than implied authority.
+
+## Two Sessions, Two Jobs
+
+Mirrors the book's Alpha/Beta split:
+
+- **Seminar chat (Claude.ai)** — the professor / synthesis partner. Where Dave learns out loud, works through a product, argues with the material, and decides what's worth carding. Exploratory.
+- **Claude Code session** — repo work. Writing the cards to disk, building and running labs, wiring up rendering, and generating the final outputs (boot camp write-up, MCP, deck).
+
+Synthesized material moves from the seminar chat to the Claude Code session as planning notes. When that handoff arrives, fold the durable decisions into this file and the repo rather than leaving them in a transcript.
 
 ## Relationship to the Website
 
