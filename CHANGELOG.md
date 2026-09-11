@@ -127,3 +127,8 @@ and what centralizing costs in attribution. Card 039 open question resolved.
 
 Card 043: OAuth turns an MCP server into a policy enforcement point. Card 042
 updated — its per-user-vs-service-identity binary is false; 043 is the third path.
+
+## v0.25 — 2026-09-11
+
+Card 044 (none of this is AI-specific) and the first labs/ entry: knowledge-mcp,
+drafted with step 3 gated pending a real run.
