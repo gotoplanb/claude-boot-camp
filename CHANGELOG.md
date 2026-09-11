@@ -61,3 +61,8 @@ Fable 5 classifier collision with security review.
 Card 020 (unattended work needs a harness). Card 019 corrected — it overclaimed
 that Fable was wrong for security review; a ran-it observation beat the docs
 inference. Card 018 reframed: Fable friction is fit mismatch, not incapability.
+
+## v0.12 — 2026-09-11
+
+Cards 021-022: the constraint/verification harness split, and the observability
+feedback loop as the general solution to state divergence.
