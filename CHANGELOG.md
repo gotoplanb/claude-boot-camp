@@ -24,3 +24,9 @@ that content is now card 005. Added a dictation proper-noun glossary to CLAUDE.m
 Card schema: added `preference` and `decision` types and `n/a` verification, so
 personal working style is never presented as verified fact. Reclassified the first
 six cards; three are now preferences, one a decision.
+
+## v0.5 — 2026-09-11
+
+Cards 007-010 from the Claude Projects seminar session: Projects mechanics
+(verified against official docs), Projects vs CLAUDE.md, the local-tooling
+default as a labelled preference, and an open thread on hooks and context habits.
