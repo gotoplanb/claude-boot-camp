@@ -97,3 +97,8 @@ its availability gates, viewer-account connector execution, the two data modes
 
 Cards 032-033: chat+MCP vs Salesforce Mobile pre-built views, and the
 discernment-vs-reproducibility boundary.
+
+## v0.19 — 2026-09-11
+
+Cards 034-035: Claudeforce (verified against the official 2026-08-26 release)
+and the subscription-vs-metered cost-shape argument.

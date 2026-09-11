@@ -13,6 +13,8 @@ Ad-hoc questions don't work that way. *"Across these contacts, who do I actually
 
 **Chat plus MCP sidesteps the whole model: there is no layout to design, because the view is generated per question.** That's a durable structural advantage, not a novelty — the same reason ad-hoc artifacts beat custom-report sprawl (card 031). Pre-built anything loses to arbitrary questions.
 
+**Salesforce has since productized this pattern.** "Salesforce in Claude" — 37 prebuilt sales skills running inside Claude's interface, on the AIforce harness — is the supported version of exactly this (card 034). The DIY route keeps the advantage that matters here: prebuilt skills are pre-built views again, excellent for anticipated cases and useless for the unanticipated ones.
+
 It also plays to what the model is actually good at: joining across records, synthesising an account's full history, bucketing, and judgment calls that are cumbersome in SOQL and natural in conversation.
 
 ## Three limits to be clear-eyed about
