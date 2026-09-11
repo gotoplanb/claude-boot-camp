@@ -25,10 +25,10 @@ Actual code generation, and questions about Dave's own custom documentation and 
 
 ### Fable — autonomous, narrow, and watched for a different reason
 
-**Rarely used for writing software** — *"I find it just kind of goes into a hole."* Almost no feature development.
+**Rarely used for writing software** — *"I find it just kind of goes into a hole."* Almost no feature development. Worth being precise about that phrase: it describes a **fit mismatch, not a capability limit** (see card 020). Fable can do the work; the friction comes from watching closely a model tuned to run unattended.
 
 Reserved for two shapes:
-- **Security reviews** — but see card 019; this collides with Fable's classifiers.
+- **Security reviews** — and these run fine; the classifiers target uplift-risk content, not routine engineering review (card 019).
 - **Heavy refactors that touch a lot of existing test coverage** — large, mechanical, well-bounded, with tests as the check.
 
 The nuance worth preserving, because it's easy to flatten into "fire-and-forget": he *does* watch it.
@@ -51,4 +51,6 @@ Concrete fits: grab two bits of data, consider them together, return a compariso
 
 A pure capability ranking predicts the opposite and misleads in both directions: it pushes expensive models onto fully-specified tasks where a small model is strictly better, and onto interactive chat where latency *is* the product. It also leaves people surprised when the top-tier model "goes into a hole" on feature development.
 
-Asking **"how specified is this, am I watching, and is speed part of the requirement?"** answers it in one step — and survives model releases, since a new tier changes which name sits in which row, not the rows themselves. That durability matters given how fast disposition shifts between versions (card 015).
+Card 020 sharpens the unattended half: the question isn't really whether you're watching, it's whether **something other than you can verify the result**. Tasks with a test suite are safe to walk away from; tasks whose deliverable is a judgment aren't, however large they are.
+
+Asking **"how specified is this, who verifies it, and is speed part of the requirement?"** answers it in one step — and survives model releases, since a new tier changes which name sits in which row, not the rows themselves. That durability matters given how fast disposition shifts between versions (card 015).

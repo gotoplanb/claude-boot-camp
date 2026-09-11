@@ -55,3 +55,9 @@ state after compaction. Cards 010 and 014 updated with cross-references.
 
 Cards 018-019: model selection by supervision style and task shape, and the
 Fable 5 classifier collision with security review.
+
+## v0.11 — 2026-09-11
+
+Card 020 (unattended work needs a harness). Card 019 corrected — it overclaimed
+that Fable was wrong for security review; a ran-it observation beat the docs
+inference. Card 018 reframed: Fable friction is fit mismatch, not incapability.
