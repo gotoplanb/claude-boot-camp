@@ -24,7 +24,11 @@ This is the counter to card 024's problem: you can't instruct Claude to be caref
 The trick is that **the model never solves the original challenge.** It re-implements from *your* artifacts, somewhere else, and the learning happens in the comparison.
 
 **1. Solve it yourself, manually, and take notes as you go.**
-A Trailhead superbadge is a good scenario: a plain-language use case with automated checks that tell you *where* you failed. Work it legitimately. While you do, keep the notes you'd keep anyway:
+A Trailhead superbadge is a good scenario: a plain-language use case with automated checks that tell you *where* you failed. Work it legitimately.
+
+**Prefer one you haven't completed before.** A first solve produces better raw material than a replay: the notes are written while you're actually stuck, so they capture the struggle rather than a reconstruction from memory. On a badge you already know, the tacit steps are *more* invisible — you do them reflexively and never think to write them down, which is exactly the material being hunted. It also moots the policy question a second way: there's nothing to reset.
+
+While you work, keep the notes you'd keep anyway:
 - the **error messages as Salesforce wrote them** — verbatim, they're the most useful artifact
 - what you had to go fix, and in what order
 - a running document of the sequencing and gotchas you hit
