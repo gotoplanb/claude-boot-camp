@@ -147,6 +147,14 @@ Match the voice of davestanton.com:
 - No marketing speak, no hype, no emoji. Ever.
 - Honest about limits. "I haven't run this yet" is always better than implied authority.
 
+## The Topic Parking Lot — GitHub Issues, Not Cards
+
+Not every topic Dave raises should become a card immediately. Writing a card is a commitment of attention, and carding every passing idea turns the session into a pile of side quests.
+
+So when he flags something to **cover later**, file a GitHub issue labelled `topic` instead — enough body to be useful when it's picked up (what to cover, why it matters, which section it serves, any traps), but no research and no prose.
+
+This lets him mind-dump freely and lets us choose the order later. Cards are for things actually worked through; issues are for things acknowledged and deferred.
+
 ## Two Sessions, Two Jobs
 
 Mirrors the book's Alpha/Beta split:
