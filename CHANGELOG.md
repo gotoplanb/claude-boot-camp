@@ -132,3 +132,8 @@ updated — its per-user-vs-service-identity binary is false; 043 is the third p
 
 Card 044 (none of this is AI-specific) and the first labs/ entry: knowledge-mcp,
 drafted with step 3 gated pending a real run.
+
+## v0.26 — 2026-09-11
+
+Card 045: who Cowork is actually for. Cowork auth model still unresolved —
+filed as issue #7 rather than guessed.

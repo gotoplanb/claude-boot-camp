@@ -2,7 +2,7 @@
 
 **Source:** Dave, Claude Boot Camp session 2026-09-11, articulating why his governance hesitation about Claude Cowork is specific rather than general. Token-hygiene and audit points are Beta's, same session.
 **Type:** concept
-**Verified:** `ran-it` for the local scoped-token setup — this is how Dave runs Claude Code today. The **security principle** is reasoned and uncontroversial. `[confirm-this: Cowork's access model is described here second-hand — verify how it actually authenticates before citing this as a critique of that specific product.]`
+**Verified:** `ran-it` for the local scoped-token setup — this is how Dave runs Claude Code today. The **security principle** is reasoned and uncontroversial. `[confirm-this: **Cowork's access model remains unverified after two documentation searches** — see card 045 and issue #7. Do not cite this card as a critique of that specific product until it's settled; the principle stands on its own regardless.]`
 **Relevant to:** 3 (administering — governance), 4 (integrating), 2 (operating Claude products)
 
 ## The question that decides the surface
