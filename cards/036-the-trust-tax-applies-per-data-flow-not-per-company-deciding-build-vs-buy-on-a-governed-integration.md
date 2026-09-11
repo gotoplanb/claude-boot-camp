@@ -2,12 +2,12 @@
 
 **Source:** Dave's prediction that Salesforce will meter MCP usage behind its trust-boundary narrative, Claude Boot Camp session 2026-09-11. The per-data-flow sharpening and the FLS correction are Beta's, same session. Pricing verified against [Agentforce pricing](https://www.salesforce.com/agentforce/pricing/) and the [Flex Credits rate card](https://www.salesforce.com/en-us/wp-content/uploads/sites/4/assets/pdf/agentforce/Flex-Credits-Rate-Card-04.21.2026.pdf).
 **Type:** concept
-**Verified:** mixed, deliberately — see the claim ledger below. The central **rule** is `inferred`; the pricing mechanics are `docs`; the prediction is explicitly a prediction. `[confirm-this: resolves when Salesforce in Claude pricing publishes — card 034.]`
+**Verified:** mixed, deliberately — see the table below. The central **rule** is `inferred`; the pricing mechanics are `docs`; the prediction is explicitly a prediction. `[confirm-this: resolves when Salesforce in Claude pricing publishes — card 034.]`
 **Relevant to:** 6 (Claude + Salesforce), 3 (administering — governance and cost), 4 (integrating)
 
-## Claim ledger
+## What's verified and what isn't
 
-Because this card mixes a verified fact, an inference, and a bet, they're separated:
+This card mixes a checked fact, a reasonable guess, and an outright bet. They're separated so nobody has to guess which is which:
 
 | Claim | Status |
 |---|---|
