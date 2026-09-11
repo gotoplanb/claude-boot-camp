@@ -122,3 +122,8 @@ remote-control tunnel pattern.
 
 Cards 041-042: the small-team secrets pattern and its support-burden ceiling,
 and what centralizing costs in attribution. Card 039 open question resolved.
+
+## v0.24 — 2026-09-11
+
+Card 043: OAuth turns an MCP server into a policy enforcement point. Card 042
+updated — its per-user-vs-service-identity binary is false; 043 is the third path.

@@ -22,6 +22,8 @@ At a hundred people you pick one of two costs:
 
 Neither is wrong. But the second one **relocates a property you were getting for free** and, if nobody notices, simply deletes it.
 
+> **The binary above is false, and card 043 is the third path.** With OAuth token exchange, the MCP server mints per-user downstream tokens at request time — so you get the user's *actual* entitlements without operating 100 PATs, and attribution stops being a logging problem because the permission itself is theirs. Read this card as *what happens if you don't do that*; it's the common outcome, not the good one.
+
 ## The failure mode
 
 You centralize secrets for good reasons (card 041), switch to a service account because managing 100 tokens is absurd, and six months later someone asks who triggered a change. The target system says the service did. Your logs say nothing, because nobody scoped "preserve attribution" as a requirement of the migration — it wasn't a feature anyone chose, so it wasn't a feature anyone protected.
