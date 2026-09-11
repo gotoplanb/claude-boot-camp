@@ -33,4 +33,4 @@ If a failure mode requires the model to remember to check something on every tur
 
 Card 017 is the deterministic version of this fix: a `SessionStart` hook on the `compact` matcher injects real git state as context, so the harness supplies the truth rather than the model remembering to ask for it.
 
-This is the practical, load-bearing version of "write better instructions" advice — which is often just an invitation to keep losing the same argument more verbosely. See card 015 for the sibling case, where the mismatch is between the model and its *previous version* rather than the world.
+This is the version of "write better instructions" advice that actually holds up — which is often just an invitation to keep losing the same argument more verbosely. See card 015 for the sibling case, where the mismatch is between the model and its *previous version* rather than the world.

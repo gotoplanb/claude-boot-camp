@@ -29,7 +29,7 @@ That second failure is the sneaky one, because nothing looks wrong. There's no e
 
 Put a **small passive pointer** in context that tells the model when to retrieve actively. A few lines in CLAUDE.md or a project instruction — *"Dave's reference cards on Claude tooling are available via `list_claude_cards`; check them before answering questions about MCP, Claude Code workflows, or context management"* — converts an omission failure into a decision the model can actually make.
 
-This is also why an MCP tool *description* is load-bearing: it's the passive advertisement for an active capability. A vague description means the tool never fires.
+This is also why an MCP tool *description* carries so much weight: it's the passive advertisement for an active capability. A vague description means the tool never fires.
 
 ## Why this matters
 
