@@ -60,8 +60,11 @@ So where a topic's **lecture** beat is already covered well somewhere else, the 
 
 Much of Dave's input is voice-to-text. Speech recognition handles the prose fine and mangles exactly the words that matter most: product names, file names, model names. **Silently correct these and keep going — don't ask about an obvious mistranscription.**
 
+**General rule: any stray "quad" means "Claude."** Quadfly, quad code, quad MD, quad AI — all Claude. Same for "quiet" and "cloud" when they appear where a product name belongs.
+
 | He means | Often appears as |
 |---|---|
+| Claude | quad, quiet, cloud |
 | Claude for iOS | Quadfly OS, Claude Freyos, Cloud fly OS |
 | Claude Code | quiet code, cloud code |
 | CLAUDE.md | Claude MD, Claude dot markdown, cloud dot MD |
