@@ -92,3 +92,8 @@ rebuild from your own notes in a clean org, diff. Closes the superbadge question
 Cards 027-031: artifacts. The Projects gap, Claude Code artifact publishing and
 its availability gates, viewer-account connector execution, the two data modes
 (and the permissions inversion), and ad-hoc reporting for Salesforce.
+
+## v0.18 — 2026-09-11
+
+Cards 032-033: chat+MCP vs Salesforce Mobile pre-built views, and the
+discernment-vs-reproducibility boundary.
