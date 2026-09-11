@@ -112,3 +112,8 @@ claim ledger for cards mixing verified facts, inferences, and predictions.
 
 Cards 037-038: Claude Tag, and the remote-only MCP constraint across hosted
 surfaces.
+
+## v0.22 — 2026-09-11
+
+Cards 039-040: the blast-radius question (ambient vs scoped credentials) and the
+remote-control tunnel pattern.
