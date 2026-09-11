@@ -50,3 +50,8 @@ and disposition drift across model versions. Card 010 partially answered.
 
 Cards 016-017: minimal-core CLAUDE.md with triggered pointers, and re-injecting
 state after compaction. Cards 010 and 014 updated with cross-references.
+
+## v0.10 — 2026-09-11
+
+Cards 018-019: model selection by supervision style and task shape, and the
+Fable 5 classifier collision with security review.
