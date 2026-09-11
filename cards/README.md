@@ -87,6 +87,8 @@ Flag uncertainty inline too: `[confirm-this: does this apply on the Team plan?]`
 
 **When two ideas could plausibly share a card, file two.** Narrow beats broad, and the tie-breaker is retrieval: a stuffed card matches many searches vaguely and none precisely, so it surfaces when it shouldn't and gets skimmed when it should have been read.
 
+**The test: a card is a citable unit.** Size it to what you'd want a pointer to resolve to, not to a topic boundary. If you'd ever link to one half without the other, they're two cards. If they always travel together — same lesson, same "why it matters" — they're one. Card 006 keeps dictation errors and the glossary fix together for exactly this reason: you'd never cite the problem without the mitigation.
+
 Split when the candidates differ in any of:
 
 - **Who's searching for it** — different questions should reach different cards
