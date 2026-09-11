@@ -73,6 +73,24 @@ A preference can still be backed by execution, and that difference matters:
 | `decision` + `n/a` | A stance. Agree or don't; there's nothing to check. |
 | `gotcha` + `ran-it` | A fact. He hit this. |
 
+### When one card's claims differ in confidence
+
+Usually every claim in a card sits at the same confidence, so one `Verified:` value covers it. When it doesn't — a checked fact, a reasonable guess, and an outright bet in the same card — put a small table near the top marking each claim:
+
+```markdown
+## What's verified and what isn't
+
+| Claim | Status |
+|---|---|
+| Agentforce meters at $0.10/action | `docs` — current rate card |
+| Trust machinery is bundled into that price | `inferred` — couldn't confirm |
+| The new product will also be metered | prediction — Dave's bet, not a claim |
+```
+
+Set `**Verified:** mixed, deliberately — see the table below.` and let the table carry it. Card 036 is the worked example.
+
+The reason to bother: without it, a shaky claim borrows credibility from a solid one sitting next to it. Don't give the table a name — just do it.
+
 Always give a short reason after the value rather than the bare word:
 
 ```
