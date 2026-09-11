@@ -81,3 +81,8 @@ Card granularity is now explicitly Claude's call.
 
 First Salesforce cards (024-026): the created-vs-usable gap, knowledge-elicitation
 harnesses, and org hygiene. Superbadge policy question filed as issue.
+
+## v0.16 — 2026-09-11
+
+Card 025 rewritten around a policy-safe elicitation protocol: solve manually,
+rebuild from your own notes in a clean org, diff. Closes the superbadge question.
