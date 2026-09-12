@@ -153,3 +153,8 @@ extended case studies alongside labs. curriculum.md notes the third instrument.
 
 Cards 050-051, both mined from the brokerage case study: the managed-package
 write boundary, and separating price from credits with derived consumption.
+
+## v0.30 — 2026-09-12
+
+Card 052: reaching an app with no deep link via the Web Share API — shipped and
+confirmed on device. Card 003 upgraded to ran-it.
