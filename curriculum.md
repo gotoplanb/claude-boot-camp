@@ -50,6 +50,8 @@ Seeds: org data and metadata access · the Salesforce MCP surface · deployment 
 
 Cards first. See [`cards/README.md`](cards/README.md). A section moves from `outline` to `drafting` only when there's enough carded material to write from — not before.
 
+**Three teaching instruments, not two.** Lecture establishes the why, the lab proves one mechanism in an hour — and **extended case studies** show what months of compounding decisions produce, which is the thing participants are actually aiming at and can't experience in a session. Case studies are the closing exemplar for a section and the prompt for a participant's own go-to-market plan. See card 049; the first one is the brokerage build.
+
 Sections are **not worked in order**. Starting with Claude Code (5) and the Claude apps (2), where the hands-on experience already exists, then following tangents. See [`CLAUDE.md`](CLAUDE.md) for the working style, and the cards for the method and stance.
 
 Where a lecture beat is already covered well elsewhere — [Anthropic Academy](https://anthropic.skilljar.com), official docs — the lecture can be a pointer rather than a rewrite. Labs stay original.

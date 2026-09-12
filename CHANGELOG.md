@@ -143,3 +143,8 @@ filed as issue #7 rather than guessed.
 Cards 046-047: the two access models (connectors mirror you, agent identity is
 its own), and Chat vs Cowork by task shape. Issue #7 substantially answered;
 cards 037/039/045 updated.
+
+## v0.28 — 2026-09-12
+
+Cards 048-049: build-time vs run-time economics, and the decision to carry
+extended case studies alongside labs. curriculum.md notes the third instrument.
