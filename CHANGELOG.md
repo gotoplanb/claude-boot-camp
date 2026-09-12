@@ -173,3 +173,9 @@ a private vault.
 
 Card 053 gains Dave's actual reasoning: receiver-side bias, and deliberation as
 friction that costs output.
+
+## v0.34 — 2026-09-12
+
+Card 054: MIT-0 by default on tools — the licence as a commitment device against
+premature generalisation. Cross-linked with card 013, which made the opposite
+licence choice for the writing, deliberately.

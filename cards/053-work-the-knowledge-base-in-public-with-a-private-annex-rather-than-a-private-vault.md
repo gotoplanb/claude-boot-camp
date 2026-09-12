@@ -58,3 +58,5 @@ Consequences this corpus demonstrates, independent of the reasoning above:
 The choice is usually framed as a personality trait — "some people share, some don't." It's better understood as **choosing where the publishing cost lands**: pay it continuously by writing in the open, or pay it in a lump later when you want the knowledge to reach anyone but yourself.
 
 This corpus is the argument for paying continuously. Fifty-plus cards in, it's simultaneously a private reference, a public resource, a curriculum source, and a retrieval endpoint available from any project — with no export step between those uses, because there was never a private-only version to convert.
+
+The same public-by-default instinct shows up in the tool repos, but for a different reason worth reading separately: there the licence is aimed at the author, as a brake on premature generalisation (card 054).
