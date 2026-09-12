@@ -163,3 +163,8 @@ confirmed on device. Card 003 upgraded to ran-it.
 
 Scope clarified: the corpus is a superset of any output. Card anything worth
 keeping, including lessons with no Claude angle; the boot camp draws selectively.
+
+## v0.32 — 2026-09-12
+
+Card 053: working the knowledge base in public with a private annex, rather than
+a private vault.
