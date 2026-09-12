@@ -191,3 +191,19 @@ gains a pointer to the third tier.
 Card 056: workflow conventions outlive the constraints that justified them.
 Write the constraint alongside the rule so obsolescence shows up as a
 contradiction rather than as quiet, well-executed waste.
+
+## v0.40 — 2026-09-12
+
+First drafting pass. All six sections move `outline` -> `drafting`, each with a
+lecture arc written from the cards, a "what's verified and what isn't" table,
+and a per-section gap list. New top-level GAPS.md ranks the work by leverage.
+
+Two structural findings from the pass:
+
+- Section 1 did not cohere. Its cards split into architecture-for-autonomy
+  (stays) and identity/access/governance (moved to section 3, where it is now
+  the core). Section 1 is rebuilt as curated pointers to Anthropic Academy and
+  the docs plus a short original spine, per the no-duplication rule.
+- Section 3 is a governance lens applied to the other sections, not a domain of
+  its own. Said plainly in the draft rather than papered over. Cards 039-046 are
+  owned by section 3; section 4 points at them instead of re-teaching them.

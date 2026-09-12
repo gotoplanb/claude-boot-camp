@@ -8,37 +8,37 @@ Status values: `outline` (structure only) · `carding` (cards accumulating) · `
 
 ---
 
-## 1. Foundational AI and concepts — `outline`
+## 1. Foundational AI and concepts — `drafting`
 
 The vocabulary and mental models everything else depends on. Enough grounding to make good decisions, not a machine-learning course.
 
 Seeds: what these models do and don't do · context and why it runs out · tokens and cost structure · where models fail and how failure looks · evaluation, and why "it seemed good" isn't one · when not to use AI at all.
 
-## 2. Operating Claude products — `outline`
+## 2. Operating Claude products — `drafting`
 
 Using the products well, day to day. The surfaces, what each is good at, and the habits that separate a productive session from a chaotic one.
 
 Seeds: the product surfaces and when to reach for each · Projects and persistent context · organizing work that spans days · getting useful output from a bad first answer · sharing work with a team.
 
-## 3. Administering Claude products — `outline`
+## 3. Administering Claude products — `drafting`
 
 The center-of-excellence job. What you own once more than a handful of people are using this.
 
 Seeds: provisioning and access · plan and tier differences that actually matter · policy and acceptable use · spend visibility and controls · rollout to a skeptical org · measuring whether it's working.
 
-## 4. Integrating with Claude (MCP and APIs) — `outline`
+## 4. Integrating with Claude (MCP and APIs) — `drafting`
 
 Exposing your own systems and content as tools Claude can call.
 
 Seeds: the API, in practice · what MCP is and when it beats a plain integration · building a small MCP server · auth for real clients · connecting an existing internal system · what to expose and what to withhold.
 
-## 5. Building with Claude Code — `outline`
+## 5. Building with Claude Code — `drafting`
 
 From an empty repo to a deployed, tested artifact.
 
 Seeds: setting up a workspace that stays sane · the full loop — build, test, deploy · project instructions and why they matter · agents and workflows · where to draw the line between what you automate and what you keep · reviewing work you didn't write.
 
-## 6. Claude + Salesforce — `outline`
+## 6. Claude + Salesforce — `drafting`
 
 The integration path in depth, for consultants and SIs.
 
