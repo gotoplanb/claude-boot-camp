@@ -148,3 +148,8 @@ cards 037/039/045 updated.
 
 Cards 048-049: build-time vs run-time economics, and the decision to carry
 extended case studies alongside labs. curriculum.md notes the third instrument.
+
+## v0.29 — 2026-09-12
+
+Cards 050-051, both mined from the brokerage case study: the managed-package
+write boundary, and separating price from credits with derived consumption.
