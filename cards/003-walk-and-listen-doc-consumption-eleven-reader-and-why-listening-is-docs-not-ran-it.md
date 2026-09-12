@@ -2,14 +2,14 @@
 
 **Source:** Claude Boot Camp planning session, 2026-09-11, discussing how Dave actually prefers to consume documentation.
 **Type:** preference
-**Verified:** docs — the tool recommendation has not been road-tested yet. `[confirm-this: has Eleven Reader actually been used on a real doc set, and does the audio hold up for dense technical prose with code blocks?]`
+**Verified:** `ran-it` for Eleven Reader itself — in regular use, and confirmed 2026-09-12 reading a full technical post end to end (14 minutes of audio, headings and structure preserved, word-level highlighting). `docs` for the batch-automation options below, which remain untried. `[confirm-this: how the audio handles **code blocks** specifically is still unknown — the post tested had prose and tables but no code.]`
 **Relevant to:** general (affects how learning happens across every section)
 
 ## Content
 
 Reading docs at a desk is not the preferred mode — walking and listening is. The lightweight path:
 
-- **[Eleven Reader](https://elevenreader.io)** (ElevenLabs app) — import a URL or paste document text, it generates audio, listen on the go. No pipeline, no automation, works for casual use today.
+- **[Eleven Reader](https://elevenreader.io)** (ElevenLabs app) — import a URL or paste document text, it generates audio, listen on the go. No pipeline, no automation, works for casual use today. davestanton.com now carries a **Listen** button that hands a post straight to it via the share sheet — see card 052 for why that's a share-sheet trick rather than a deep link.
 
 If batch or queued listening ever becomes worth automating:
 
