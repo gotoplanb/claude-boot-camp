@@ -15,6 +15,11 @@ The operative rule, for when the two pull apart:
 
 Format is downstream and cheap. The underlying material is the expensive part.
 
+**And every rendering is selective.** The boot camp will not include all the cards, and shouldn't. The corpus is a **superset** of any output drawn from it — a personal knowledge base first, a curriculum source second. That has two consequences worth acting on:
+
+- **Card things that are worth keeping even when they don't fit the boot camp.** A technique learned while building something unrelated is still worth having next year. Card 052 (reaching a mobile app that has no deep link) has nothing to do with Claude specifically; it's a good pattern and it stays.
+- **Don't argue about whether something "belongs" at filing time.** That's a synthesis-time decision, and making it early costs you material you can't get back. Over-filing is cheap; a lesson you didn't write down is gone.
+
 Corollaries that follow:
 
 - **Don't optimize for an output format up front.** Deciding "this is a six-module course" early distorts what gets captured — you start filing what fits the modules instead of what's true.

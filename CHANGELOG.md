@@ -158,3 +158,8 @@ write boundary, and separating price from credits with derived consumption.
 
 Card 052: reaching an app with no deep link via the Web Share API — shipped and
 confirmed on device. Card 003 upgraded to ran-it.
+
+## v0.31 — 2026-09-12
+
+Scope clarified: the corpus is a superset of any output. Card anything worth
+keeping, including lessons with no Claude angle; the boot camp draws selectively.

@@ -18,6 +18,8 @@ The real work is building a knowledge primitive — a repeatable way to create, 
 
 So: **do not optimize for an output format up front.** If a decision makes the cards better but the boot camp slightly harder to assemble, make the cards better. Format is downstream and cheap; the underlying material is the expensive part.
 
+**What to card is broader than what the boot camp will teach.** The corpus is a superset of any output drawn from it. File anything worth keeping for future work — including lessons with no Claude angle at all, learned while building something unrelated. The boot camp draws selectively from the corpus at synthesis time; deciding what "belongs" at filing time just loses material. Over-filing is cheap. A lesson nobody wrote down is gone.
+
 ## Working Style
 
 **Iterative and tangent-following, not linear.** Follow whatever topic is interesting or useful right now, document it, move on. Do not work through the six sections in order, and do not build things for the sake of completeness.
