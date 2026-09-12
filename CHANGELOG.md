@@ -185,3 +185,9 @@ licence choice for the writing, deliberately.
 Card 055: unlisted beats private for drafts, because the venue already decided
 publishability. Obscurity is fine as curation and fatal as protection. Card 053
 gains a pointer to the third tier.
+
+## v0.36 — 2026-09-12
+
+Card 056: workflow conventions outlive the constraints that justified them.
+Write the constraint alongside the rule so obsolescence shows up as a
+contradiction rather than as quiet, well-executed waste.
