@@ -39,4 +39,4 @@ It reframes a class of work. "Build me a report" currently means creating a dura
 
 For consultants and SIs it's also a demo with unusually little setup: a connector, a question, and a link — showing value without touching org configuration at all, which is exactly the pitch that gets you past a cautious admin.
 
-The caution that belongs alongside the pitch: **semi-ephemeral is a discipline, not a feature.** Nothing expires these automatically, and a gist that becomes load-bearing is just an ungoverned report. If a link gets used repeatedly, that's the signal it should graduate into a real report in the platform.
+The caution that belongs alongside the pitch: **semi-ephemeral is a discipline, not a feature.** Nothing expires these automatically, and a gist that everyone starts depending on is just an ungoverned report. If a link gets used repeatedly, that's the signal it should graduate into a real report in the platform.

@@ -168,3 +168,8 @@ keeping, including lessons with no Claude angle; the boot camp draws selectively
 
 Card 053: working the knowledge base in public with a private annex, rather than
 a private vault.
+
+## v0.33 — 2026-09-12
+
+Card 053 gains Dave's actual reasoning: receiver-side bias, and deliberation as
+friction that costs output.
