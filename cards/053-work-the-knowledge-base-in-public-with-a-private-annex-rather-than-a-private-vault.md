@@ -20,6 +20,8 @@ The alternative taken here: **the corpus is a public git repo**, licensed CC BY-
 
 The discipline is choosing the right home *at filing time*, not treating one as the overflow of the other. A card that can't be public is a signal to put it in the private annex — not a reason to abandon public-by-default.
 
+There's a third tier between them — **unlisted** — used for work in progress on the public site. It's a curation setting, not an access control, and it only works because the placement decision already ran. See card 055.
+
 ## The reasoning — receiver-side bias
 
 Dave's own framing, and it borrows vocabulary from his book's Shannon-Weaver work on **sender-side encoding** and the **prepared receiver**:

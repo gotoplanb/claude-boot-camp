@@ -179,3 +179,9 @@ friction that costs output.
 Card 054: MIT-0 by default on tools — the licence as a commitment device against
 premature generalisation. Cross-linked with card 013, which made the opposite
 licence choice for the writing, deliberately.
+
+## v0.35 — 2026-09-12
+
+Card 055: unlisted beats private for drafts, because the venue already decided
+publishability. Obscurity is fine as curation and fatal as protection. Card 053
+gains a pointer to the third tier.
