@@ -33,7 +33,7 @@ The framing for participants: *this is what you'd ideally build for yourself as 
 ## How to use it in the curriculum
 
 - As the **closing exemplar** for a section, after labs have proven the mechanisms — here's those mechanisms at ten hours a week for six months.
-- As a **source of carded principles**. Card 048 came straight out of it; the managed-package constraint and the two-books billing separation are candidates.
+- As a **source of carded principles**. Cards 048, 050, and 051 all came straight out of it — build-time economics, the managed-package boundary, and the two-books billing separation.
 - As the **go-to-market prompt**: what is *your* equivalent? Which system of record, which population that won't adopt it, which deterministic transformation is currently being done by a person?
 
 ## Why this matters
