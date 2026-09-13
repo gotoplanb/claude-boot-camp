@@ -207,3 +207,10 @@ Two structural findings from the pass:
 - Section 3 is a governance lens applied to the other sections, not a domain of
   its own. Said plainly in the draft rather than papered over. Cards 039-046 are
   owned by section 3; section 4 points at them instead of re-teaching them.
+
+## v0.41 — 2026-09-12
+
+Card 057: group open questions by blocker. 26 confirm-this flags plus 5 open
+issues collapse to roughly 6 experiments; six of the flags are watch items
+waiting on someone else, not work. GAPS.md gains the grouping table, and
+issues #6/#7 are consolidated into one Team/Enterprise tenant session.
