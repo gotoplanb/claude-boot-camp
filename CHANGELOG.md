@@ -214,3 +214,11 @@ Card 057: group open questions by blocker. 26 confirm-this flags plus 5 open
 issues collapse to roughly 6 experiments; six of the flags are watch items
 waiting on someone else, not work. GAPS.md gains the grouping table, and
 issues #6/#7 are consolidated into one Team/Enterprise tenant session.
+
+## v0.42 — 2026-09-14
+
+Card 058: write the spec to kill it. The adversarial read is the product, the
+emotional default is expecting to throw the idea away, and the attempt to scope
+perfectly up front is the failure rather than the cure. Worked example is a
+two-hour secrets-proxy design session that ended at `cp`. Pairs with card 054
+(structural commitment device) as the behavioral half.
