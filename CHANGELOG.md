@@ -242,3 +242,22 @@ were tangled together.
 
 GAPS.md: both attach to blockers that already existed rather than adding new
 ones. Flag count 26 -> 28, still six blockers.
+
+## v0.44 — 2026-09-15
+
+Cards 061 and 062, from the Dreamforce 2026 keynote (Siemens/Piper partner-
+recruitment demo, watched live).
+
+- 061 is the principle: match the interface tier to the trust tier. An
+  anonymous visitor has no authenticated identity, so screening is the ceiling
+  rather than a design failure — and dressing screening up as conversation
+  oversells it. The sharper point is that AI didn't introduce the qualification
+  gate, it removed the paperwork alibi that hid it.
+- 062 is the high-trust end: publish skills to a verified partner network for
+  deal registration and co-sell, rather than asking partners to come to your
+  site. Gated on partner identity, which is why the chat widget is the version
+  that gets demoed.
+
+Both are held at `inferred` — the demo description is Dave's live account with
+no independent coverage, and 062 is an untested product idea. GAPS.md: 28 -> 31
+flags, still six blockers.

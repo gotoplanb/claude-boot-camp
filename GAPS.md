@@ -24,7 +24,7 @@ These matter more than any single gap.
 
 ## The open questions are fewer than they look
 
-28 `confirm-this` flags across the cards plus 5 open issues reads as 33 threads. Grouped by *what would actually resolve them*, it's about **six** (card 057):
+31 `confirm-this` flags across the cards plus 5 open issues reads as 36 threads. Grouped by *what would actually resolve them*, it's about **six** (card 057):
 
 | Blocker | Resolves | Effort |
 |---|---|---|
@@ -32,8 +32,8 @@ These matter more than any single gap.
 | Publish artifacts, incl. connector-backed, with a second viewer | cards 027, 028, 029, 030 | an afternoon |
 | One hosted Salesforce MCP connector | cards 030, 031, 032 | the keystone, days |
 | One weeks-long session through real compactions | cards 008, 017 | elapsed time, not effort |
-| Small standalone trials | cards 003, 006, 012, 016, 020, 059 | hours each |
-| **Not actionable — waiting on someone else** | cards 002, 013, 034, 035, 036, 055 | watch items, not work |
+| Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062 | hours each |
+| **Not actionable — waiting on someone else** | cards 002, 013, 034, 035, 036, 055, 061 | watch items, not work |
 
 That last row matters: six flags are waiting on Salesforce pricing, a lawyer, or an undiagnosed event. They inflate the backlog without being work.
 
