@@ -222,3 +222,23 @@ emotional default is expecting to throw the idea away, and the attempt to scope
 perfectly up front is the failure rather than the cure. Worked example is a
 two-hour secrets-proxy design session that ended at `cp`. Pairs with card 054
 (structural commitment device) as the behavioral half.
+
+## v0.43 — 2026-09-15
+
+Cards 059 and 060: Skills vs. custom MCP, split into the two questions that
+were tangled together.
+
+- 059 is the context economics — Skills load lazily (name + description, body
+  on demand), classic MCP loads every connected tool's full schema at connect
+  time. Skills win on context, MCP wins on update propagation. Tool Search is
+  the mitigation, confirmed for Claude Code and an open question for custom
+  connectors on claude.ai. Mixed verification table; the token figures need a
+  primary source link and the "37 tools" comparison is arithmetic, not
+  measurement.
+- 060 is the build decision, filed as a correction: the axis is the Claude org
+  boundary, not the plan tier. Plugin marketplaces cover Team as well as
+  Enterprise, so custom MCP is for reaching people outside the org — external
+  clients — rather than for dodging per-seat cost.
+
+GAPS.md: both attach to blockers that already existed rather than adding new
+ones. Flag count 26 -> 28, still six blockers.
