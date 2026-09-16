@@ -261,3 +261,24 @@ recruitment demo, watched live).
 Both are held at `inferred` — the demo description is Dave's live account with
 no independent coverage, and 062 is an untested product idea. GAPS.md: 28 -> 31
 flags, still six blockers.
+
+## v0.45 — 2026-09-16
+
+Cards 063 and 064, from a Dreamforce 2026 supplier-onboarding demo (SAP setup
+as the friction point).
+
+- 063 names the harvest pattern: a UI-driving agent is a *discovery* tool that
+  reverse-engineers an unknown sequence, after which you throw the agent away
+  and keep the script. Distinct from the verification harnesses in 020/021 —
+  those you pay for forever, this is a one-time cost leaving a deterministic
+  artifact. Includes the iterative scope-narrowing loop and the reason it needs
+  a fixed task to work at all, plus the incident-response payoff: the script
+  enumerates the operations, so a leaked credential has a knowable short list
+  rather than an opaque one.
+- 064 bounds it. The method assumes the API mirrors the UI transaction, which
+  is often false in ERP systems where the screen fires validation, approval
+  routing, or logic the BAPI/RFC does not. The end state can look identical and
+  still be missing something, so the UI-as-oracle check is blind to exactly
+  this. Held at `inferred` — nobody here has hit it.
+
+GAPS.md: 31 -> 32 flags, still six blockers.
