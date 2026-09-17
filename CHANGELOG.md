@@ -343,3 +343,26 @@ chat behaviour — and `labs/README.md` allows labs only from `ran-it` cards.
 GAPS.md: the scheduled-task sitting is promoted to its own blocker, since it
 resolves 066/067/068 together and unblocks the first new lab. Six blockers ->
 seven; 34 -> 35 flags.
+
+## v0.49 — 2026-09-17
+
+Card 069: the skill / command / connector / plugin taxonomy, prompted by
+finding both a "Data" plugin and a data skill in Claude for Mac's Customize
+pane and asking whether they were the same thing.
+
+They aren't — the plugin is the container and the skill is one of ten things
+inside it, which is why they all carry the `data:` prefix. Skills and commands
+are the same idea split by who decides (model vs. you) and are not 1:1. The
+connector is the only one of the three holding credentials, which is the
+distinction that matters operationally.
+
+Refines card 037's "plugins (bundles of skills)" — they bundle commands and
+connector wiring too. Carries the bundle-vs-cherry-pick cost from card 059:
+ten skills' listings are a standing per-session tax if you installed for one.
+
+Mixed verification. The ten skill names and the command/skill mismatch are
+observed; the plugin file structure is stated without a source link, the
+command count is explicitly uncounted, and "skills are markdown only" is
+flagged rather than asserted.
+
+GAPS.md: 35 -> 37 flags, seven blockers.
