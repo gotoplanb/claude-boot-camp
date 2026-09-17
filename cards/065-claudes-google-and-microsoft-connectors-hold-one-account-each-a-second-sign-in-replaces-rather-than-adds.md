@@ -3,6 +3,7 @@
 **Source:** Dave, Claude Boot Camp session 2026-09-17, working out whether to connect several Google accounts at once.
 **Type:** product-behavior
 **Verified:** mixed — see the table. This is the account-multiplicity companion to card 046, which established the *permission* model from the docs but not how many identities a connector can hold.
+**Relevant to:** 2 (operating Claude products), 4 (integrating), 3 (administering — governance)
 
 ## What's verified and what isn't
 

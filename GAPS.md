@@ -24,7 +24,7 @@ These matter more than any single gap.
 
 ## The open questions are fewer than they look
 
-36 `confirm-this` flags across the cards plus 5 open issues reads as 41 threads. Grouped by *what would actually resolve them*, it's about **eight** (card 057):
+35 inline `confirm-this` flags across the cards plus 5 open issues reads as 40 threads. Grouped by *what would actually resolve them*, it's about **eight** (card 057). Re-derive the count rather than incrementing it by hand — `grep -ro '\[confirm-this:' cards/ | wc -l`:
 
 | Blocker | Resolves | Effort |
 |---|---|---|
@@ -37,7 +37,7 @@ These matter more than any single gap.
 | Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062, 064 | hours each |
 | **Not actionable — waiting on someone else** | cards 002, 013, 034, 035, 036, 055, 061 | watch items, not work |
 
-That last row matters: six flags are waiting on Salesforce pricing, a lawyer, or an undiagnosed event. They inflate the backlog without being work.
+That last row matters: seven cards are waiting on Salesforce pricing, a lawyer, or an undiagnosed event. They inflate the backlog without being work.
 
 ---
 
