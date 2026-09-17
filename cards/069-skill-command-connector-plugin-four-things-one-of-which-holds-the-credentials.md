@@ -1,6 +1,6 @@
 # Skill, Command, Connector, Plugin — and Why That's Three Things, Not Four
 
-**Source:** Dave in Claude for Mac, 2026-09-17, installing Anthropic's **Data** plugin and finding both a "Data" plugin and a data skill in Customize: *"are they like the same thing?"* Beta confirmed the bundle contents against its own live skill list, same session. **Revised 2026-09-17** after Dave built a real plugin in `~/watchtower/labs/release-notes-plugin` — see the correction below.
+**Source:** Dave in Claude for Mac, 2026-09-17, installing Anthropic's **Data** plugin and finding both a "Data" plugin and a data skill in Customize: *"are they like the same thing?"* Beta confirmed the bundle contents against its own live skill list, same session. **Revised 2026-09-17** after Dave built a real plugin, now published at [gotoplanb/claude-plugins](https://github.com/gotoplanb/claude-plugins) (`plugins/release`) — see the correction below.
 **Type:** product-behavior
 **Verified:** `ran-it` for everything in the corrected taxonomy — a working plugin was authored, installed and invoked. The Data-plugin enumeration is `ran-it` from Beta's skill list.
 **Relevant to:** 2 (operating Claude products), 4 (integrating), 5 (building with Claude Code), 1 (foundational concepts)

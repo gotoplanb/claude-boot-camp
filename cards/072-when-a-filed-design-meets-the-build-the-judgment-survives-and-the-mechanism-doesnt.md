@@ -1,6 +1,6 @@
 # When a Filed Design Meets the Build, the Judgment Survives and the Mechanism Doesn't
 
-**Source:** Comparing card 070 as filed (2026-09-17, morning) against the plugin Dave then built at `~/watchtower/labs/release-notes-plugin` (same day).
+**Source:** Comparing card 070 as filed (2026-09-17, morning) against the plugin Dave then built the same day, now at [gotoplanb/claude-plugins](https://github.com/gotoplanb/claude-plugins).
 **Type:** pattern
 **Verified:** `ran-it` for this instance — one design, filed then built, with the diff visible in both cards. `inferred` for the generalisation; it's one case, and cards 058 and 063 are the supporting ones.
 **Relevant to:** general, 5 (building with Claude Code)
