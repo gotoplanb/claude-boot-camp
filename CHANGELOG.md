@@ -387,3 +387,32 @@ GAPS.md gains an eighth blocker: author one plugin end to end and run it on a
 second surface. Unlike the scheduled-task row it is self-resolving — the lab's
 prerequisite is the lab. Card 069 moved out of small standalone trials into it
 rather than being counted twice. 37 -> 38 flags.
+
+## v0.51 — 2026-09-17
+
+Dave built the release-notes plugin (`~/watchtower/labs/release-notes-plugin`).
+The build resolved the gate and corrected the cards that described it.
+
+**Corrections:**
+
+- **069** was wrong on two counts and is revised. Skill and command are *not*
+  two primitives — commands have been merged into skills, and the trigger
+  choice is the frontmatter flag `disable-model-invocation: true`. The taxonomy
+  is three things, not four. The manifest is `.claude-plugin/plugin.json`, not
+  root `plugin.json`. And "a skill is just markdown" is false: skills carry
+  `allowed-tools`, `argument-hint` with `$1`, and executable `!` blocks. The
+  card's flagged confirm-this is answered — in the negative.
+- **070** moves to `ran-it`. Ruling 1's judgment held; its mechanism didn't.
+  No `commands/` directory, deliberately — paired files would collide on the
+  same `/release:*` names.
+- **071** is half upgraded. `allowed-tools` is a real field and now the worked
+  example of "declare it"; the degradation half stays inferred until the plugin
+  runs on a second surface. "A skill is inert instructions" was too strong and
+  is narrowed.
+
+**New:** card 072, on what the build itself demonstrated — every judgment in
+the filed design survived and every unrun mechanism claim was wrong or
+dissolved. The verification discipline is what made filing early safe.
+
+GAPS.md: the plugin blocker is struck; only 071's second-surface check remains,
+and that's minutes. 38 -> 36 flags.

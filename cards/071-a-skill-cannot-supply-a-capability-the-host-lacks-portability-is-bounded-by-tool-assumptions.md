@@ -2,12 +2,14 @@
 
 **Source:** Beta, Claude Boot Camp session 2026-09-17, ruling screenshots out of the release-plugin lab (card 070) and naming the general reason.
 **Type:** concept
-**Verified:** `inferred` — follows from what a skill is (card 069) plus the surface differences already established in card 038. Not tested by authoring one plugin and running it across surfaces. *[confirm-this: run the same skill from Claude for Mac, Claude Code and an API-driven context and record what degrades.]*
+**Verified:** mixed — the **declaration** half is now `ran-it`: `allowed-tools` is a real frontmatter field, used in the built release plugin (card 070) to declare git plus Read/Edit/Write. The **degradation** half stays `inferred`. *[confirm-this: run the same skill from Claude for Mac, Claude Code and an API-driven context and record what actually degrades.]*
 **Relevant to:** 4 (integrating), 2 (operating Claude products), 5 (building with Claude Code), 1 (foundational concepts)
 
 ## The principle
 
-**A skill is instructions. It can tell Claude what to do; it cannot give Claude the ability to do it.**
+**A skill can use the tools its host provides — and declare which it needs — but it cannot supply one the host lacks.**
+
+The original framing here was "a skill is inert instructions." That's too strong: skills declare `allowed-tools`, take arguments, and can embed executable blocks (card 069). The accurate line is narrower and still decisive:
 
 Anything that *acts* — taking a screenshot, querying a warehouse, reading a file — needs a tool the **host environment** provides. Card 069 makes this point about connectors; it generalizes to every tool:
 
@@ -36,8 +38,14 @@ This is card 038's shape at a different layer. There, the surface determined whi
 
 **Decide the tool dependency deliberately, at authoring time.** Two honest options:
 
-1. **Declare it.** The plugin requires computer use, and says so. Fine when you control where it's installed.
-2. **Degrade gracefully.** The skill handles everything that needs no tool and *reminds the human* to do the rest. This is the choice card 070 makes for screenshots — the release skill formats notes, changelogs and version conventions, and tells you to grab the screenshots yourself.
+1. **Declare it** — and there's a field for exactly this. `allowed-tools` in the skill's frontmatter names what it needs:
+
+   ```yaml
+   allowed-tools: Bash(git log:*), Bash(git describe:*), Read, Edit, Write
+   ```
+
+   That makes the dependency explicit and auditable rather than buried in prose. Fine when you control where it's installed.
+2. **Degrade gracefully.** The skill handles everything that needs no tool and *hands the rest back*. Card 070's built major-release skill is the worked example: it emits `![TODO: screenshot — <what to shoot>]()` placeholders at the spots that need an image, lists them back as a checklist, and says plainly that it can't capture a screen — while completing notes, migration steps, changelog formatting and version math.
 
 Option 2 keeps the artifact portable, and the reminder is not a consolation prize: a checklist item a human executes is more reliable than a tool call that may not exist.
 
@@ -45,7 +53,7 @@ Option 2 keeps the artifact portable, and the reminder is not a consolation priz
 
 ## Why this matters
 
-It's the counterweight to the thing that makes skills appealing. They're cheap, portable, and plain text — so it's easy to write one as though text were sufficient, and describe an action the model has no way to perform.
+It's the counterweight to the thing that makes skills appealing. They're cheap, portable, and mostly prose — so it's easy to write one as though describing an action were the same as enabling it.
 
 The distinction to hold: **a skill changes what Claude knows to do; a tool changes what Claude can do.** Bundling the first has never supplied the second.
 

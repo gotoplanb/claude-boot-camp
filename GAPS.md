@@ -24,7 +24,7 @@ These matter more than any single gap.
 
 ## The open questions are fewer than they look
 
-38 `confirm-this` flags across the cards plus 5 open issues reads as 43 threads. Grouped by *what would actually resolve them*, it's about **eight** (card 057):
+36 `confirm-this` flags across the cards plus 5 open issues reads as 41 threads. Grouped by *what would actually resolve them*, it's about **eight** (card 057):
 
 | Blocker | Resolves | Effort |
 |---|---|---|
@@ -33,7 +33,7 @@ These matter more than any single gap.
 | One hosted Salesforce MCP connector | cards 030, 031, 032 | the keystone, days |
 | One weeks-long session through real compactions | cards 008, 017 | elapsed time, not effort |
 | One scheduled task against a connected Google account | cards 066, 067, 068 — **unblocks the morning-brief lab** | one sitting |
-| Author one plugin end to end, run it on a second surface | cards 069, 070, 071 — **unblocks the release-notes lab** | one sitting, self-resolving |
+| ~~Author one plugin end to end~~ — **done 2026-09-17**, resolved 069 and 070; release-notes lab unblocked. Remainder: run that plugin on a second surface | card 071 (degradation half only) | minutes |
 | Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062, 064 | hours each |
 | **Not actionable — waiting on someone else** | cards 002, 013, 034, 035, 036, 055, 061 | watch items, not work |
 
