@@ -321,3 +321,25 @@ resolves the connector at fire time or pins it at creation. That answer makes
 the card either a live risk or a non-issue.
 
 GAPS.md: 33 -> 34 flags, still six blockers.
+
+## v0.48 — 2026-09-17
+
+Card 068: the scheduled morning-brief lab, filed as a design rather than built
+as a lab.
+
+The lab reads the calendar, finds attendees per event, pulls related Gmail,
+summarizes, and writes one Google Doc per meeting — Calendar + Gmail + Drive in
+a single unattended run. The teaching point is the line between the schedule
+and the chat: asking Claude live needs neither a schedule nor a connector, so
+the scheduled task's real job is making the doc exist *before you would think
+to ask*. Drive is the persistence, not a nicer output surface. Post-meeting
+doc updates and the "which doc is this" matching problem stay as takeaway.
+
+Not written into `labs/` on purpose. Four steps are unverified — whether a
+scheduled task can use connectors at all, fire-time vs creation-time binding,
+whether it can write to Drive, and whether unattended Gmail search matches
+chat behaviour — and `labs/README.md` allows labs only from `ran-it` cards.
+
+GAPS.md: the scheduled-task sitting is promoted to its own blocker, since it
+resolves 066/067/068 together and unblocks the first new lab. Six blockers ->
+seven; 34 -> 35 flags.
