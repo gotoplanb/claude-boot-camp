@@ -13,6 +13,8 @@ Not "keep an eye on my inbox." General triage is exactly the case connectors ser
 
 **The case that works:** Drive connected to a client account (Bosshardt) where weekly updates get uploaded and shared documentation gets referenced. Narrow, repeated, and tied to one account — so Gmail and Calendar stay off and only Drive is on.
 
+**A scheduled task answers the test by definition.** If you're setting something up to fire on a schedule — the scheduled-task surface in Claude for Mac, say — it *is* a recurring use case, so the "is this worth connecting" question is already settled the moment you start scheduling. And it's not optional: a task that fires on its own and needs to read or write somewhere needs access that's live and authenticated **at fire time**, because there's no one there to swap accounts or intervene. Scheduling is the case where a connector stops being a convenience and becomes the channel the work runs through. It also raises the stakes on card 065's one-account limit considerably — see card 067.
+
 **Business and team contexts fit naturally**, because the single-account model from card 065 matches how the org actually works. A small team sharing one workspace has *one* relevant account to connect, not five personal ones to juggle. The constraint that's friction for an individual is a non-issue there.
 
 ## When to skip it
@@ -36,6 +38,7 @@ This is card 060's trap in a smaller frame — taking on an ongoing engineering 
 | Situation | Call |
 |---|---|
 | One account, one clear recurring use case | Connect it, and scope narrowly — turn off the services you don't need |
+| Scheduling an unattended task against that data | Already answered — connect it, and pin the account (card 067) |
 | Several scattered accounts, no single recurring Claude-in-the-loop task | Skip it; keep managing natively |
 | Already have a CLI/programmatic path to that data | Redundant for that account |
 | Genuinely need simultaneous same-provider multi-account access | A real gap — custom MCP or third-party bridge, treated as infrastructure, not a default |

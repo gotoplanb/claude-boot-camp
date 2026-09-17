@@ -300,3 +300,24 @@ Cards 065 and 066, on Claude's first-party connectors.
   one-minute swap you found annoying.
 
 GAPS.md: 32 -> 33 flags, still six blockers.
+
+## v0.47 — 2026-09-17
+
+Card 067, plus a sharpening of 066.
+
+- 066 gains the case where its own test answers itself: scheduling a task makes
+  it a recurring use case by definition, and an unattended task needs access
+  that is live and authenticated at fire time because nobody is there to
+  intervene. Added to the rule-of-thumb table.
+- 067 files the consequence as its own gotcha. Card 065's swap is a minor
+  annoyance in chat and a silent fault under a schedule: swap on Tuesday,
+  forget, and Wednesday's task either fails or quietly succeeds against the
+  wrong account. The dangerous outcome is the success. Mitigations are to treat
+  a scheduled account as dedicated and to have the task assert its own
+  preconditions — card 020's verifier aimed at the input rather than the output.
+
+Held at `inferred` with one decisive open question: whether a scheduled task
+resolves the connector at fire time or pins it at creation. That answer makes
+the card either a live risk or a non-issue.
+
+GAPS.md: 33 -> 34 flags, still six blockers.
