@@ -282,3 +282,21 @@ as the friction point).
   this. Held at `inferred` — nobody here has hit it.
 
 GAPS.md: 31 -> 32 flags, still six blockers.
+
+## v0.46 — 2026-09-17
+
+Cards 065 and 066, on Claude's first-party connectors.
+
+- 065 is the account-multiplicity limit that card 046 didn't cover: the Google
+  and Microsoft connectors each hold one account, and a second sign-in replaces
+  rather than adds. Gmail/Calendar/Drive share one Google sign-in and move
+  together; one Google plus one Microsoft can coexist. Mixed verification —
+  the swap behaviour is run, the cross-provider simultaneity is inferred with
+  no M365 tenant to test against.
+- 066 is the decision: a connector earns its place only with a recurring task
+  tied to one account. Skips are an existing native workflow, or an existing
+  CLI path that makes the connector redundant. Carries the smaller-frame
+  version of 060's trap — don't build a multi-account bridge to fix a
+  one-minute swap you found annoying.
+
+GAPS.md: 32 -> 33 flags, still six blockers.

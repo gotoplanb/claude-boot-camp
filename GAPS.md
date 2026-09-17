@@ -24,11 +24,11 @@ These matter more than any single gap.
 
 ## The open questions are fewer than they look
 
-32 `confirm-this` flags across the cards plus 5 open issues reads as 37 threads. Grouped by *what would actually resolve them*, it's about **six** (card 057):
+33 `confirm-this` flags across the cards plus 5 open issues reads as 38 threads. Grouped by *what would actually resolve them*, it's about **six** (card 057):
 
 | Blocker | Resolves | Effort |
 |---|---|---|
-| Team/Enterprise tenant — run Claude Tag + Cowork, build a plugin marketplace | cards 037, 046, 060; issues #6, #7; part of 007 | an afternoon |
+| Team/Enterprise tenant — run Claude Tag + Cowork, build a plugin marketplace | cards 037, 046, 060, 065; issues #6, #7; part of 007 | an afternoon |
 | Publish artifacts, incl. connector-backed, with a second viewer | cards 027, 028, 029, 030 | an afternoon |
 | One hosted Salesforce MCP connector | cards 030, 031, 032 | the keystone, days |
 | One weeks-long session through real compactions | cards 008, 017 | elapsed time, not effort |
