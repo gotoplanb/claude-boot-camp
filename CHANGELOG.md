@@ -366,3 +366,24 @@ command count is explicitly uncounted, and "skills are markdown only" is
 flagged rather than asserted.
 
 GAPS.md: 35 -> 37 flags, seven blockers.
+
+## v0.50 — 2026-09-17
+
+Cards 070 and 071, from wanting a plugin-authoring lab.
+
+- 070 designs it: a release-notes plugin with patch/minor/major as three skills
+  behind three commands. The ruling that earns the lab its place is that tier
+  must be a *command*, not an auto-fired skill — "is this a patch or a major"
+  is something you already know and the model would have to guess at, which is
+  card 014's failure mode and card 069's who-decides split. Three skill files
+  rather than one with conditionals, so a patch never pays for major's content.
+- 071 generalizes the screenshot ruling: a skill is instructions and cannot
+  supply a capability the host lacks. The same skill executes under computer
+  use, does nothing from Claude Code, and fails quietly rather than loudly.
+  Card 038's surface-dependence one layer down — that card was about what is
+  reachable, this is about what is present.
+
+GAPS.md gains an eighth blocker: author one plugin end to end and run it on a
+second surface. Unlike the scheduled-task row it is self-resolving — the lab's
+prerequisite is the lab. Card 069 moved out of small standalone trials into it
+rather than being counted twice. 37 -> 38 flags.
