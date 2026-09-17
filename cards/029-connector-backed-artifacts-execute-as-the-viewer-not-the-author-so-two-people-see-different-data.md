@@ -5,6 +5,8 @@
 **Verified:** `docs` — read in full. **Not yet run.** `[confirm-this: publish a connector-backed artifact and have a second person open it; confirm the per-viewer permission prompt and the differing data.]`
 **Relevant to:** 4 (integrating — MCP and APIs), 2 (operating Claude products), 3 (administering)
 
+> **Scope:** this card is what happens *once you've chosen* connector-backed — the viewer-execution behaviour and its limits. For **which mode to choose**, and the permissions hazard on the embedded-snapshot side, see card 030.
+
 ## The behaviour
 
 A published artifact can call **MCP connectors at view time**, so the page shows current data rather than a snapshot from the session that built it. Ask for it in the prompt — *"pull the live list through my GitHub connector when the page loads"* — and Claude declares which connectors the page may call as part of publishing.
@@ -40,4 +42,4 @@ That's arguably the right security design (no credential leakage, no privilege e
 
 It's a clean example of a feature whose *security* model and whose *expected* model point in opposite directions — and the gap only shows up when someone else opens the page, which is after you've already shared it.
 
-For anyone standing up a Claude practice, the second bullet is the operational one: **a locally-configured MCP server won't power a published page.** If the plan is "build an internal dashboard on top of our MCP server and share it," that requires the connector to exist on claude.ai accounts, not in a developer's `.mcp.json`. Worth knowing before designing around it.
+The operational trap is the one in Related limits: **a locally-configured MCP server won't power a published page** (card 038). "Build an internal dashboard on our MCP server and share it" requires the connector on every viewer's claude.ai account.

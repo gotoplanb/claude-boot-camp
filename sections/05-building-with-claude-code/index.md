@@ -94,6 +94,48 @@ Separate the session that explores from the session that produces, and notice wh
 
 ---
 
+## Topic 5.4 — Packaging what you've built: skills and plugins
+
+*One hour. Lecture ~20 min, lab ~30 min, takeaway ~10 min.*
+
+### The spine
+
+Anything you do repeatedly in a session can be packaged so it survives the session. The mechanics are small; **the judgment is one question** — should the model be allowed to fire this on its own?
+
+### Lecture arc
+
+**1. Three things, not four (card 069, `ran-it`).** Skill, connector, plugin. Commands are *not* a fourth primitive — they were merged into skills, and the trigger is a frontmatter flag:
+
+```yaml
+disable-model-invocation: true   # never auto-fires; user triggers /name only
+```
+
+Of the three, **only the connector holds credentials.** That's the line that matters when someone asks what a plugin can reach.
+
+**2. The judgment (card 070, `ran-it`).** Release tier is the worked example: *"is this a patch or a major"* is something you already know, so making the model infer it is asking it to reconstruct a fact you could state (card 014). Tiers get the flag; they never auto-fire.
+
+**3. The cost is measurable, not rhetorical (cards 059, 069).** `claude plugin details <name>` reports it directly — the release plugin is ~165 tok always-on, with ~1k/~1.4k/~2k on-invoke per tier. That's why three skill files beat one skill with branches: a patch never pays major's ~2k.
+
+**4. What a skill can't do (card 071).** It can use tools the host provides and *declare* them via `allowed-tools`, but it cannot supply a capability the host lacks. The major-release skill emits `![TODO: screenshot]()` placeholders rather than pretending it can capture a screen — and the failure it avoids is a quiet one.
+
+### Lab (~30 min) — build a plugin, publish it, install it back
+
+Built and verified: [gotoplanb/claude-plugins](https://github.com/gotoplanb/claude-plugins).
+
+1. Scaffold `.claude-plugin/plugin.json` plus `skills/<tier>/SKILL.md` — three tiers, each with the invocation flag and an `allowed-tools` line.
+2. `claude plugin validate <path>` — including `--strict`.
+3. Add a `.claude-plugin/marketplace.json` catalog, push to GitHub.
+4. `claude plugin marketplace add <owner>/<repo>` then `claude plugin install <name>@<marketplace>`.
+5. `claude plugin details <name>` — read the projected token cost back, and connect it to step 3 of the lecture.
+
+**Scope honestly:** this path is verified for Claude Code. Getting the same plugin into **Claude for Mac** goes through claude.ai — installs there sync down as `<name>@synced` — and the desktop registration step is *not* yet verified. Say so rather than demonstrating it.
+
+### Takeaway
+
+Package one thing you already do by hand. Decide the trigger flag deliberately, declare your tools, and run `plugin details` to see what it costs every session from now on.
+
+---
+
 ## Labs — provisional
 
 Strongest candidates, all from `ran-it` cards. These are sketches, not the built article.
@@ -105,6 +147,9 @@ Strongest candidates, all from `ran-it` cards. These are sketches, not the built
 | Minimal core + pointer | 016 | Five-line `CLAUDE.md` plus a triggered pointer; watch it load only on the trigger |
 | Two-session handoff | 001 | Explore in chat, paste to Claude Code, file cards — observe cards on disk, not an essay |
 | Build-time refactor | 048 | Convert an LLM-per-request job to build-time schema + deterministic run; compare cost |
+| Sandbox harvest | 063 | Let a UI-driving agent discover an unknown click-path, then throw the agent away and keep the script |
+
+**Built, not provisional:** Topic 5.4's plugin lab exists — [gotoplanb/claude-plugins](https://github.com/gotoplanb/claude-plugins), authored, published through a marketplace and reinstalled from it. It is the section's first lab that is not a sketch.
 
 **Not yet labbable:** the hooks material (017) is `docs` only. Building a lab on it would violate the project's own rule.
 
@@ -124,12 +169,19 @@ Strongest candidates, all from `ran-it` cards. These are sketches, not the built
 | Compaction hooks | 017 | `docs` only — **do not lab** |
 | Publishing artifacts from Claude Code | 028 | `docs` only |
 | Determinism buys debuggability | 033 | `inferred` |
+| Skill/connector/plugin taxonomy; trigger is a frontmatter flag | 069 | `ran-it` — built and invoked |
+| Plugin token cost is reportable (`plugin details`) | 069, 059 | `ran-it` — ~165 always-on for the release plugin |
+| Marketplace publish → install round trip | 070 | `ran-it` — Claude Code only; **desktop registration unverified** |
+| `allowed-tools` declares a skill's dependencies | 071 | `ran-it`; the *degradation* half still `inferred` |
+| Harvest a click-path, ship the script | 063 | `ran-it` — standing working method |
+| Harvested sequence may not equal the UI path | 064 | `inferred` — **nobody has hit it**; do not teach as observed |
+| Judgment survives a build, mechanism doesn't | 072 | `ran-it` for the one instance; `inferred` as a generalisation |
 
 ---
 
 ## Gaps — where more hands-on time is needed
 
-**1. Nothing covers Claude Code running where nobody is watching.** No card touches CI, GitHub Actions, or server-side agents. Every verification pattern in the section assumes a human with eyeballs nearby. For a CoE audience planning automated use, that's the largest hole.
+**1. Nothing covers Claude Code running where nobody is watching.** No card touches CI, GitHub Actions, or server-side agents. Every verification pattern in the section assumes a human with eyeballs nearby. For a CoE audience planning automated use, that's the largest hole. *Partially narrowed:* card 067 supplies one concrete unattended failure — a scheduled task silently repointed by a connector swap — but it is chat-surface, not CI, and is still `inferred`.
 
 **2. Hooks are documented but unrun.** Card 017 is the structural answer to the section's central problem and it's `docs`-only. One weeks-long session with real compactions converts the most important fix in §5.2 from theory to experience.
 
@@ -139,4 +191,6 @@ Strongest candidates, all from `ran-it` cards. These are sketches, not the built
 
 **5. No attended/unattended checklist.** Card 020 states the principle but never proceduralises it into questions you answer *before* handing a task off.
 
-**6. When *not* to use Claude is barely addressed.** The section is intensely about using it well. Card 033 is the closest thing to a scope boundary, and it's Salesforce-flavoured.
+**6. When *not* to use Claude is barely addressed.** The section is intensely about using it well. Card 033 is the closest thing to a scope boundary, and it's Salesforce-flavoured. Card 058 now supplies the adjacent discipline — most ideas should die before they're built — but that's about *what to build*, not about when the tool is the wrong one.
+
+**7. The packaging story stops at Claude Code.** Topic 5.4's lab is verified end to end for the CLI and stops at the claude.ai boundary. Until someone registers a custom marketplace in the desktop app, the section can teach authoring and local distribution but not org distribution.

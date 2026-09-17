@@ -5,6 +5,8 @@
 **Verified:** `docs` — read in full. **Not yet run.** `[confirm-this: build one of each and compare refresh behaviour and what a second viewer sees.]`
 **Relevant to:** 4 (integrating — MCP and APIs), 6 (Claude + Salesforce), 3 (administering)
 
+> **Scope:** this card is the **mode choice** and its governance consequences. The viewer-execution mechanics of the connector-backed mode — per-viewer prompts, side-effect attribution, sharing limits — belong to card 029.
+
 ## The two modes
 
 An artifact gets its data one of two ways, and **they are opposites on both axes that matter**:
@@ -32,7 +34,7 @@ Getting this backwards matters because it inverts the risk. The mode people assu
 
 **Embedded snapshot = a permissions bypass waiting to happen.** The data was pulled under *your* field-level security and permission sets. Share it with someone whose profile shouldn't see those fields, and they see them anyway — in a link, outside the platform's access model entirely. For CRM-derived data this is the real hazard, and it's invisible: nothing errors, the page just renders.
 
-**Connector-backed = the permission model survives.** Each viewer's own access governs what renders. Someone without the connection, or who declines the prompt, gets the page with empty live sections rather than data they shouldn't have.
+**Connector-backed = the permission model survives.** Each viewer's own access governs what renders (card 029 has the mechanics).
 
 So the guidance inverts by mode:
 

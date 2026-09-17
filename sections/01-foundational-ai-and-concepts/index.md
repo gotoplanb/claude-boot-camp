@@ -68,6 +68,10 @@ Optional fifth, if the audience is technical: **determinism buys debuggability, 
 
 | Claim | Card | Status |
 |---|---|---|
+| Interface tier should match trust tier | 061 | `inferred` — single observed demo, no independent coverage |
+| Automating a mediocre workflow makes it conspicuous | 061 | `inferred` — a reframe, not a measurement |
+| Most ideas should die before being built | 058 | `ran-it`; the ~95% is Dave's estimate, **not** a measurement |
+| Judgment is durable; mechanism is perishable | 072 | `ran-it` for one instance; generalisation `inferred` |
 | Model choice by supervision shape | 018 | `ran-it` — daily practice |
 | Disposition drifts across versions | 015 | `ran-it` |
 | Build-time vs. run-time economics | 048 | `ran-it` — built and shipped |

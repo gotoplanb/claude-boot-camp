@@ -94,6 +94,9 @@ The most `inferred`-heavy section in the corpus. Full list, because teaching any
 
 | Claim | Card | Status |
 |---|---|---|
+| Harvest a click-path in a sandbox, ship the script | 063 | `ran-it` — standing method |
+| A harvested API sequence may skip UI-fired logic | 064 | `inferred` — **nobody has hit it**; teach as caution |
+| Partner motions need identity, not a chat box | 062 | `inferred` — an untested product idea |
 | Configuration layers invisible to the API | 024 | `ran-it` |
 | Disposable org for Claude | 026 | `ran-it` |
 | Don't write into managed packages | 050 | `ran-it` |

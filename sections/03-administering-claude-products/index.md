@@ -96,6 +96,10 @@ Governance advice that's wrong is expensive, so this table is deliberately harsh
 
 | Claim | Card | Status | Note |
 |---|---|---|---|
+| Whose *account* a connector holds (one per provider) | 065 | `ran-it` | Multiplicity companion to 046 |
+| Unattended tasks inherit mutable connector state | 067 | `inferred` | **Nobody has hit it**; one question decides it |
+| Distribution axis is the org boundary, not plan tier | 060 | `n/a` stance | Team-marketplace claim is `docs`, untested |
+| Anonymous surfaces can only screen; access needs identity | 061 | `inferred` | Reasoned from a single observed demo |
 | Blast radius bounded by credential | 039 | `ran-it` | Strongest claim in the section |
 | Disposable org for Salesforce work | 026 | `ran-it` | |
 | `.env` + password manager to ~10 people | 041 | `ran-it` | |

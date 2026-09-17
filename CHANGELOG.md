@@ -416,3 +416,38 @@ dissolved. The verification discipline is what made filing early safe.
 
 GAPS.md: the plugin blocker is struck; only 071's second-surface check remains,
 and that's minutes. 38 -> 36 flags.
+
+## v0.52 — 2026-09-17
+
+Audit pass over all 72 cards, then fixes.
+
+**Errors fixed.** Card 065 was missing `Relevant to` — the only card missing a
+required field. GAPS's flag count had drifted from hand-incrementing (read 36,
+actual 35) and its "six flags waiting on someone else" line described six cards
+when the row listed seven; both corrected, and the count is now documented as
+something to re-derive with grep rather than bump by hand.
+
+**Consolidation.** Cards 029 and 030 overlapped on source, claims and
+confirm-this. Rather than merge — 029 is cited from five places — each gained a
+scope line drawing the boundary: 030 owns the **mode choice** and its governance
+consequences, 029 owns the **viewer-execution mechanics** of the connector-backed
+mode plus its sharing limits. The duplicated passages are trimmed to pointers.
+
+**Rename.** `069-...-four-things-...` → `...-three-things-...`, so the slug
+matches the corrected title. No internal links used the old slug.
+
+**Sections caught up.** They had lagged the corpus by 20 cards — nothing past
+052 was cited anywhere. Now:
+
+- **§2** gains Topic 2.3 (connectors, skills and plugins) and a labs table that
+  names which of the three are runnable and which are gated.
+- **§5** gains Topic 5.4 (packaging what you've built), whose lab is the first
+  in the section that is built rather than a sketch, plus the harvest lab.
+- **§1, §3, §4, §6** gain verification rows for the new material, with the
+  unverified halves marked as such.
+- §4 and §5 gap lists record what the new cards closed and what they didn't —
+  notably that packaging is verified for Claude Code and stops at the claude.ai
+  boundary.
+
+Every section table was column-audited after editing; one mismatch introduced
+during the pass was caught and fixed.

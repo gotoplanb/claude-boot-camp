@@ -91,6 +91,59 @@ Before you share an artifact, answer two questions: **is the data embedded or li
 
 ---
 
+## Topic 2.3 — Extending a chat surface: connectors, skills and plugins
+
+*One hour. Lecture ~20 min, lab ~25 min, takeaway ~15 min.*
+
+### The spine
+
+Everything you bolt onto a chat surface has a standing cost and, in one case, a credential. The decision is **narrower than people expect** — most accounts should connect less than they do.
+
+### Lecture arc
+
+**1. One account per provider (card 065, `ran-it`).** The Google connector holds one account; a second sign-in **replaces** it rather than adding. Gmail, Calendar and Drive ride the same sign-in and move together. Google and Microsoft can coexist (`inferred` — untested). Two accounts on the *same* provider is where the native connectors stop.
+
+**2. The swap is cheap, which sets the bar (card 065).** Disconnect/reconnect is about a minute and touches nothing but visibility — chats, memory and projects are unaffected. So the constraint only genuinely bites when you need *simultaneous* access.
+
+**3. When a connector earns its place (card 066, `ran-it`).** A specific, recurring, reference-or-update workflow tied to one account. Not inbox triage. Two honest skips: you already manage it natively, or you already have a CLI path — **a connector competes with the access you have, and often loses.**
+
+**4. Scheduling answers the question for you (card 066).** An unattended task needs access live and authenticated at fire time. Which raises the stakes on §2.3.1 considerably — see the gotcha below.
+
+**5. What a plugin actually installs (card 069, `ran-it`).** Three things, not four: skills, connectors, and the plugin that bundles them. Commands are merged into skills; the trigger is a frontmatter flag. **Only the connector holds credentials.** Installing Anthropic's Data plugin adds *ten* namespaced skills, not one thing called Data — and every installed skill costs its listing every session (card 059).
+
+### The gotcha worth the whole hour (card 067, `inferred`)
+
+Swap the connector on Tuesday to check a personal inbox, forget to swap back, and Wednesday's scheduled task either fails or **quietly succeeds against the wrong account**. In live chat you'd catch it instantly; under a schedule nobody is watching.
+
+> The dangerous outcome is the success, not the failure.
+
+State plainly that this is reasoned, not observed, and that one question decides it: does a schedule resolve the connector at fire time, or pin it at creation? Until that's answered the mitigation is to treat a scheduled account as dedicated and have the task assert its own context before writing.
+
+### Lab (~25 min) — connect, scope down, and count the cost
+
+1. Connect one Google account; turn **off** Gmail and Calendar, leaving only Drive. Minimum scope on a consumer surface (card 039).
+2. Install a plugin, then open the Skills tab and find the namespaced components it added.
+3. `claude plugin details <name>` — read the always-on vs. on-invoke token cost aloud.
+4. Uninstall it and note what the session stops carrying.
+
+### Takeaway
+
+Audit what you have connected. For each one, name the recurring task that justifies it. Disconnect anything that fails the test.
+
+---
+
+## Labs — one built, one gated
+
+| Lab | Card | Status |
+|---|---|---|
+| Connect, scope down, count the cost (Topic 2.3) | 065, 066, 069 | **Runnable** — all three cards are `ran-it` |
+| Publish an artifact, open it as someone else (Topic 2.2) | 029, 030 | Gated — both cards are `docs`; the lab *is* the test |
+| Scheduled morning brief — calendar → Gmail → a Drive doc per meeting | 068 | **Gated by design.** Four steps unverified; `labs/README.md` bars building it until they're run |
+
+Card 068 is filed as a design, not a lab, on purpose: it would otherwise teach a scheduled task using connectors, writing to Drive, and searching Gmail unattended — none of which has been run. One sitting clears all four and card 067 with them.
+
+---
+
 ## What's verified and what isn't
 
 | Claim | Card | Status | Note |
@@ -104,6 +157,12 @@ Before you share an artifact, answer two questions: **is the data embedded or li
 | Artifacts have no path back into Projects | 027 | `docs` | **Shortest shelf life in the corpus** — a negative claim goes false silently |
 | Artifact publishing auth gate | 028 | `docs` | Version-pinned; re-check |
 | Connector-backed artifacts run as the viewer | 029 | `docs` | Not run; the lab above is the test |
+| One account per provider; second sign-in replaces | 065 | `ran-it` | Google+Microsoft simultaneity is `inferred` |
+| Connector swap is ~1 min and non-destructive | 065 | `ran-it` | Sets the bar for building any multi-account workaround |
+| Skill/connector/plugin taxonomy | 069 | `ran-it` | Commands merged into skills; trigger is a frontmatter flag |
+| Plugin token cost is reportable | 069 | `ran-it` | `claude plugin details` |
+| Scheduled tasks drift with a swapped connector | 067 | `inferred` | **Nobody has hit it.** One open question decides whether it's real |
+| A connector competes with an existing CLI path | 066 | `ran-it` | Standing choice, not a measurement |
 
 Two of these are **short-shelf-life product claims** — 027 and 028. They should carry a re-check date, because if either ships a change, nothing in the corpus will error; the lecture will just quietly be wrong.
 

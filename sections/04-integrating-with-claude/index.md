@@ -105,10 +105,16 @@ Decide whether your server holds secrets or enforces policy. Everything else —
 | Attribution moves to app logs on centralising | 042 | `inferred` | Real at ~50 tokens × N systems; oversold below that |
 | Curated Project upload steers a chat well | 012 | `docs` | `[confirm-this: how well does a 5–10 card upload actually steer a chat?]` |
 | Custom/enterprise connectors and credentials | 045, 046 | open | Whether they mirror permissions or can hold their own credential is **not established** |
+| Skills disclose progressively; MCP loads every schema at connect | 059 | `docs` | Token figures need a primary source; the "37 tools" comparison is **arithmetic, not measurement** |
+| Distribution axis is the Claude org boundary, not plan tier | 060 | `n/a` stance; `docs` on Team marketplaces | Filed as a correction to a wrong first framing |
+| A skill can't supply a capability the host lacks | 071 | `ran-it` on `allowed-tools`; `inferred` on degradation | Same surface-dependence as 038, one layer down |
+| Marketplace publish → install round trip | 070 | `ran-it` | Claude Code verified; claude.ai/desktop registration **not** |
 
 ---
 
 ## Gaps — where more hands-on time is needed
+
+**0. Partially closed — packaging and distribution.** Cards 069–071 and the built plugin now cover authoring, marketplace publishing and install for Claude Code, and card 059 covers what a connected surface costs in context. What remains open is the claude.ai/desktop half and hosting, below.
 
 **1. The deployment story is the wall, and it's missing.** This is the highest-value gap in the section. The cards say hosting is the forgotten second job and then don't cover it: how to host an MCP server so a team can reach it safely, what the auth story is once it's public, how you know it's up. *"Build locally, host it, keep it up"* separates a proof of concept from a system, and right now the corpus stops at the proof of concept. **Needed: deploy one properly and card the whole path.**
 
