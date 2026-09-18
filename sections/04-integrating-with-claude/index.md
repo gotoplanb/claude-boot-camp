@@ -108,7 +108,7 @@ Decide whether your server holds secrets or enforces policy. Everything else —
 | Skills disclose progressively; MCP loads every schema at connect | 059 | `docs` | Token figures need a primary source; the "37 tools" comparison is **arithmetic, not measurement** |
 | Distribution axis is the Claude org boundary, not plan tier | 060 | `n/a` stance; `docs` on Team marketplaces | Filed as a correction to a wrong first framing |
 | A skill can't supply a capability the host lacks | 071 | `ran-it` on `allowed-tools`; `inferred` on degradation | Same surface-dependence as 038, one layer down |
-| Marketplace publish → install round trip | 070 | `ran-it` | Claude Code verified; claude.ai/desktop registration **not** |
+| Marketplace publish → install round trip | 070 | `ran-it` | Verified on **both** surfaces — CLI install, and the skills visible in Claude for Mac |
 
 ---
 

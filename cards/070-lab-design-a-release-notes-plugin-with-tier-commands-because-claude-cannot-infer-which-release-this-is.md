@@ -2,7 +2,7 @@
 
 **Source:** Dave, Claude Boot Camp session 2026-09-17, wanting a plugin-authoring lab and landing on release tooling as the domain. The command-vs-skill ruling and the separate-files ruling are Beta's, same session.
 **Type:** decision
-**Verified:** `ran-it` — **built, published and installed**, 2026-09-17. Lives at [gotoplanb/claude-plugins](https://github.com/gotoplanb/claude-plugins) under `plugins/release`; first built in a `watchtower/labs/` directory that has since been moved out. Authored, invoked headlessly against real tag ranges, then distributed through a marketplace and reinstalled from it. The build resolved the gate and corrected Ruling 1's mechanism (below).
+**Verified:** `ran-it` — **built, published and installed**, 2026-09-17. Lives at [gotoplanb/claude-plugins](https://github.com/gotoplanb/claude-plugins) under `plugins/release`; first built in a `watchtower/labs/` directory that has since been moved out. Authored, invoked headlessly against real tag ranges, then distributed through a marketplace and reinstalled from it. Confirmed 2026-09-18: the three release skills appear in Claude for Mac under Customize → Skills → Yours → **"From marketplaces you added"**, tagged with the plugin's displayName and attributed to their author. *[confirm-this: whether the skills also **execute** correctly on that surface is a separate question — see card 071.]* The build resolved the gate and corrected Ruling 1's mechanism (below).
 **Relevant to:** general (curriculum structure), 5 (building with Claude Code), 2 (operating Claude products)
 
 ## Why this domain and not the client one

@@ -451,3 +451,17 @@ matches the corrected title. No internal links used the old slug.
 
 Every section table was column-audited after editing; one mismatch introduced
 during the pass was caught and fixed.
+
+## v0.53 — 2026-09-18
+
+Confirmed the last open step in the plugin chain: the release plugin's three
+skills appear in Claude for Mac under Customize → Skills → Yours → "From
+marketplaces you added," tagged with the plugin displayName and attributed to
+their author. Card 070 and the §4/§5 verification rows said desktop
+registration was unverified; they now say it isn't.
+
+The distinction kept deliberately: this proves **distribution**, not
+**execution**. The skills declare `Bash(git log:*)`, and whether they run,
+degrade gracefully, or fail quietly on a surface with a different tool set is
+card 071's still-open half. §5's gap 7 is rewritten around that — "installed"
+is not "working."

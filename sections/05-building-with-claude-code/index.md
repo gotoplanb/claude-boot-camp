@@ -128,7 +128,9 @@ Built and verified: [gotoplanb/claude-plugins](https://github.com/gotoplanb/clau
 4. `claude plugin marketplace add <owner>/<repo>` then `claude plugin install <name>@<marketplace>`.
 5. `claude plugin details <name>` — read the projected token cost back, and connect it to step 3 of the lecture.
 
-**Scope honestly:** this path is verified for Claude Code. Getting the same plugin into **Claude for Mac** goes through claude.ai — installs there sync down as `<name>@synced` — and the desktop registration step is *not* yet verified. Say so rather than demonstrating it.
+**Both surfaces, verified.** The CLI round trip above, and the same plugin's skills showing up in **Claude for Mac** under Customize → Skills → Yours → "From marketplaces you added." Installs that originate on claude.ai sync the other way too, appearing locally as `<name>@synced`.
+
+**The one thing still to check:** that the skills *run* correctly on the desktop surface, not just that they're listed. A skill can be present and still unable to do its job if the host lacks a tool it declared (card 071) — these declare `Bash(git log:*)`.
 
 ### Takeaway
 
@@ -171,7 +173,7 @@ Strongest candidates, all from `ran-it` cards. These are sketches, not the built
 | Determinism buys debuggability | 033 | `inferred` |
 | Skill/connector/plugin taxonomy; trigger is a frontmatter flag | 069 | `ran-it` — built and invoked |
 | Plugin token cost is reportable (`plugin details`) | 069, 059 | `ran-it` — ~165 always-on for the release plugin |
-| Marketplace publish → install round trip | 070 | `ran-it` — Claude Code only; **desktop registration unverified** |
+| Marketplace publish → install round trip | 070 | `ran-it` on both surfaces — CLI install, and skills visible in Claude for Mac |
 | `allowed-tools` declares a skill's dependencies | 071 | `ran-it`; the *degradation* half still `inferred` |
 | Harvest a click-path, ship the script | 063 | `ran-it` — standing working method |
 | Harvested sequence may not equal the UI path | 064 | `inferred` — **nobody has hit it**; do not teach as observed |
@@ -193,4 +195,4 @@ Strongest candidates, all from `ran-it` cards. These are sketches, not the built
 
 **6. When *not* to use Claude is barely addressed.** The section is intensely about using it well. Card 033 is the closest thing to a scope boundary, and it's Salesforce-flavoured. Card 058 now supplies the adjacent discipline — most ideas should die before they're built — but that's about *what to build*, not about when the tool is the wrong one.
 
-**7. The packaging story stops at Claude Code.** Topic 5.4's lab is verified end to end for the CLI and stops at the claude.ai boundary. Until someone registers a custom marketplace in the desktop app, the section can teach authoring and local distribution but not org distribution.
+**7. Packaging reaches the desktop, but "installed" is not "working."** Distribution is now verified on both surfaces (see Topic 5.4). What remains untested is **execution** on a surface with a different tool set: the release skills declare `Bash(git log:*)`, and whether they run, degrade gracefully, or fail quietly in Claude for Mac is exactly card 071's open half. Org-wide distribution on a Team plan (card 060) is still separate and still unverified.
