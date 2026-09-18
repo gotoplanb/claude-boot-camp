@@ -35,6 +35,17 @@ So the design rule for Projects:
 
 Prefer putting genuinely-needed material in the knowledge base *passively*, where it's present without a tool call, and reserve pointers for the long-tail material where an occasional miss is acceptable. A TOC pointing at uploaded files is stronger than one pointing at things that require a live fetch.
 
+## When the answer is a skill instead
+
+The pointer pattern below has a sharper sibling now. **CLAUDE.md pays its cost in every session whether it's relevant or not; a skill costs its one-line listing and loads its body only when triggered** (card 059).
+
+So the test for a piece of standing context is *is this true of every session in this repo?*
+
+- **Yes** — CLAUDE.md. Conventions, stack, what the project is.
+- **No, it's conditional** — a skill, committed to the repo's `.claude/skills/` (card 073). Release procedure, migration steps, the thing you do monthly.
+
+Pushing conditional content into CLAUDE.md is the pollution this card's minimal-core rule is reacting to; skills are the mechanism that makes the rule easy to follow rather than a matter of restraint (card 023).
+
 ## Why this matters
 
 Two problems at once. Context budget: heavyweight reference material shouldn't tax every session for the few that need it. And staleness: a pointer resolves to the current document, while pasted content is frozen at upload time — which matters more on chat surfaces, where knowledge bases are snapshots (card 007).

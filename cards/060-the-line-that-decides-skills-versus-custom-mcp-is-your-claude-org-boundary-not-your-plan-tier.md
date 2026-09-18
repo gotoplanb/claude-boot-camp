@@ -16,10 +16,13 @@ The first framing was: Skills distribution is gated behind Enterprise, so a cust
 | Who you're reaching | What to build |
 |---|---|
 | Just you | A personal skill. There is no distribution problem to solve. |
+| Anyone who works in one repo | Commit skills to that repo's `.claude/skills/` — the clone delivers them, no install step. **Card 073**; this tier was missing from the original table. |
 | Your team, same Claude org (Team *or* Enterprise) | Plugin marketplace — bundle skills, connectors and commands; distribute by ZIP upload or GitHub sync; control access per group. Officially supported; don't hand-roll around it. |
 | People outside your Claude org entirely | Custom MCP server. It's just a URL, so it needs no org membership. |
 
 That last row is the real gap a custom MCP fills. Not cost — **reach**.
+
+And the *second* row is the one most skills belong in: if everyone who needs it already clones the repo, there is nothing to distribute (card 073).
 
 ## The trap: building a custom MCP to dodge per-seat cost
 

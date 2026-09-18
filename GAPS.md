@@ -24,7 +24,7 @@ These matter more than any single gap.
 
 ## The open questions are fewer than they look
 
-35 inline `confirm-this` flags across the cards plus 5 open issues reads as 40 threads. Grouped by *what would actually resolve them*, it's about **eight** (card 057). Re-derive the count rather than incrementing it by hand — `grep -ro '\[confirm-this:' cards/ | wc -l`:
+35 inline `confirm-this` flags across the cards plus 5 open issues reads as 40 threads. Grouped by *what would actually resolve them*, it's about **nine** (card 057). Re-derive the count rather than incrementing it by hand — `grep -ro '\[confirm-this:' cards/ | wc -l`:
 
 | Blocker | Resolves | Effort |
 |---|---|---|
@@ -34,7 +34,8 @@ These matter more than any single gap.
 | One weeks-long session through real compactions | cards 008, 017 | elapsed time, not effort |
 | One scheduled task against a connected Google account | cards 066, 067, 068 — **unblocks the morning-brief lab** | one sitting |
 | ~~Author one plugin end to end~~ — **done**; ~~reaches Claude for Mac~~ — **confirmed 2026-09-18**. Remainder: *invoke* a release skill on the desktop surface and see whether a declared `Bash` tool degrades loudly or quietly | card 071 (degradation half only) | minutes |
-| Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062, 064 | hours each |
+| One repo-committed skill, cloned elsewhere + a deliberate name collision | cards 073, 074 — **both are `docs` only and 074's precedence order is counterintuitive** | one sitting |
+| Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062, 064, 075 | hours each |
 | **Not actionable — waiting on someone else** | cards 002, 013, 034, 035, 036, 055, 061 | watch items, not work |
 
 That last row matters: seven cards are waiting on Salesforce pricing, a lawyer, or an undiagnosed event. They inflate the backlog without being work.

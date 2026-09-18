@@ -51,6 +51,8 @@ Keep them separate. One skill branching internally on tier would mean **a patch 
 
 Three files is better progressive disclosure (card 059) and simpler to read. The instinct to unify them is code-reuse instinct applied where it doesn't pay — skills aren't functions, and duplication across them costs nothing at runtime.
 
+**The rule generalizes past tiers.** A skill that *starts* a process and a skill that *is* the pipeline — many calls in sequence, then a synthesis — are different in kind, not merely different steps. Chained skills are pipe-and-filter: keep the orchestration trigger and the pipeline logic in separate files for the same reason patch and major are separate.
+
 ## Ruling 3 — screenshots are out of scope for the skill itself
 
 See card 071. A skill can run the tools it declares in `allowed-tools` — these three declare git plus Read/Edit/Write — but it cannot conjure a capability the host doesn't have, and screen capture is one. So the built skill leaves `![TODO: screenshot — <what to shoot>]()` placeholders at the spots needing an image and lists them back as a checklist, while handling everything that needs no live tool: notes, migration steps, changelog formatting, version math.

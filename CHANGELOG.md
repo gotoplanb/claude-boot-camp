@@ -465,3 +465,30 @@ The distinction kept deliberately: this proves **distribution**, not
 degrade gracefully, or fail quietly on a surface with a different tool set is
 card 071's still-open half. §5's gap 7 is rewritten around that — "installed"
 is not "working."
+
+## v0.54 — 2026-09-18
+
+Cards 073, 074, 075, plus four edits to existing cards.
+
+- **073** fills a tier card 060's distribution table skipped entirely: skills
+  committed to a repo's `.claude/skills/` reach everyone who clones it, with no
+  install step and no marketplace. Audience decides, and most skills never need
+  to leave their repo — the plugin route only earns its ceremony when the skill
+  must travel beyond one codebase.
+- **074** files two silent failures under one symptom ("the skill isn't doing
+  what I wrote"): reload is not uniform — SKILL.md edits land mid-session while
+  a sibling `.mcp.json` needs `/reload-plugins` — and name precedence runs
+  enterprise → personal → project, so the *narrowest* scope loses. Both `docs`
+  only; the precedence order is exactly the kind of counterintuitive claim that
+  should be seen before it's taught.
+- **075** supplies the mechanism behind card 063's CLI preference: a CLI's help
+  is retrievable on demand while an API surface must be resident, and Claude
+  carries trained priors on CLI conventions. Progressive disclosure that nobody
+  designed — Unix produced it for human discoverability and it happens to be the
+  property that makes a surface cheap to drive.
+
+Edits: 060 gains the missing repo tier; 063 points at 075 for the real reason;
+070's separate-files ruling generalizes to orchestration-vs-pipeline chaining;
+016 gains the test for CLAUDE.md vs. a skill — is this true of *every* session?
+
+GAPS: new blocker for 073/074, both of which are unrun. Eight blockers -> nine.

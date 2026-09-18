@@ -10,7 +10,7 @@
 1. **Work in a sandbox.** Never production. (The demo recommended this too, and it's the right call — card 026.)
 2. **Let the UI-driving agent discover the sequence.** Claude in Chrome logs in, clicks through, and you watch what the process actually requires.
 3. **Use the browser for *visual verification only*.** Dave's actual use: confirming that API requests succeeded, and that black-box backend workflows he can't see from the API fired correctly. The UI is the oracle, not the actuator.
-4. **Write the real thing as a sequence of API calls — or better, CLI calls.** CLI is the preferred target because the whole thing then executes as one command.
+4. **Write the real thing as a sequence of API calls — or better, CLI calls.** CLI is the preferred target because the whole thing then executes as one command — and, more fundamentally, because a CLI's documentation is retrievable on demand rather than resident (card 075).
 5. **Narrow the credential, iteratively** (below).
 6. **Codify the sequence as a script.** Optionally deliver it behind a custom MCP.
 
