@@ -35,7 +35,7 @@ These matter more than any single gap.
 | One scheduled task against a connected Google account | cards 066, 067, 068 — **unblocks the morning-brief lab** | one sitting |
 | ~~Author one plugin end to end~~ — **done**; ~~reaches Claude for Mac~~ — **confirmed 2026-09-18**. Remainder: *invoke* a release skill on the desktop surface and see whether a declared `Bash` tool degrades loudly or quietly | card 071 (degradation half only) | minutes |
 | One repo-committed skill, cloned elsewhere + a deliberate name collision | cards 073, 074 — **both are `docs` only and 074's precedence order is counterintuitive** | one sitting |
-| Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062, 064, 075 | hours each |
+| Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062, 064, 075, 077 | hours each |
 | **Not actionable — waiting on someone else** | cards 002, 013, 034, 035, 036, 055, 061 | watch items, not work |
 
 That last row matters: seven cards are waiting on Salesforce pricing, a lawyer, or an undiagnosed event. They inflate the backlog without being work.

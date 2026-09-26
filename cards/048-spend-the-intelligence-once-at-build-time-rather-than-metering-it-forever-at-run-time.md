@@ -36,6 +36,8 @@ The line is card 033's, arriving from the cost side rather than the governance s
 
 **The test:** if you can state the rule, encode the rule. If stating the rule *is* the hard part, that's where the model belongs.
 
+**A third case sits between them** (card 076): the rule is statable, but only after real thought about your data — so the model does that thinking *once, at build time*, and what ships is the deterministic result. Card 077 is the warning that comes with it.
+
 ## Two cost decisions worth stealing
 
 From the same build, both non-obvious:

@@ -492,3 +492,27 @@ Edits: 060 gains the missing repo tier; 063 points at 075 for the real reason;
 016 gains the test for CLAUDE.md vs. a skill — is this true of *every* session?
 
 GAPS: new blocker for 073/074, both of which are unrun. Eight blockers -> nine.
+
+## v0.55 — 2026-09-26
+
+Cards 076 and 077, from a walk-and-talk about how "we should build an agent"
+gets used in requirements.
+
+Most of the session's reframing restated cards already in the corpus — the
+build-time/run-time split is 048, and the verifiability-over-latency argument
+is 033. Filed only what those two don't cover.
+
+- **076** is the trigger, not the economics: the phrase names a technology
+  rather than a problem, and the question it skips is whether the task is
+  constrainable. Leads with sorting rather than arithmetic because "build an
+  agent that sorts our data" is a sentence people actually write. Adds a third
+  build-time flavor to 048 — the model does the *optimization reasoning* once
+  and you ship the algorithm choice — and states the answer as three-way, with
+  the common case being "wrap the smallest genuinely non-deterministic step."
+- **077** bounds it. Optimizing against representative data wins back exactly
+  the average-case cost that library hybrids spend hedging worst cases, so a
+  distribution holdout measures the wrong thing — you removed the insurance and
+  measured the premium. Stability is the guarantee that goes missing quietly.
+  `inferred`; nobody has run it.
+
+048 gains a pointer to both.
