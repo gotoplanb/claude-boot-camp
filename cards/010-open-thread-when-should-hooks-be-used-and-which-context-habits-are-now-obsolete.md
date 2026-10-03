@@ -32,6 +32,8 @@ Barely explored. Open sub-questions:
 
 **Partially answered (2026-09-11), see card 017.** One concrete use case is settled: re-injecting *dynamic* state after a context compaction, via `SessionStart` with the `compact` matcher. That also sharpens the general rule — hooks are where determinism lives, so move a check from instruction to harness whenever "sometimes the model forgets" is unacceptable. Still open: the wider use-case map, and whether determinism has any equivalent outside Claude Code.
 
+**Partially answered (2026-10-03), see card 078.** *Audit logging* comes off the hook list: Claude Code exports its own telemetry over OpenTelemetry natively, richer than a hook payload would be, and managed settings can enforce the destination so a developer can't redirect it. A hook stays the right answer when you need a custom payload, want to **block** or **rewrite** something, or want a webhook into your own service. Still open: the rest of the use-case map, and the outside-Claude-Code question.
+
 ## Why this matters
 
 Both questions are exactly what a center-of-excellence lead will be asked, and both are places where confident-sounding wrong answers are cheap to produce. Holding them as an explicit open card — rather than letting a plausible answer get carded as fact — is the verification discipline working as intended.

@@ -516,3 +516,33 @@ is 033. Filed only what those two don't cover.
   `inferred`; nobody has run it.
 
 048 gains a pointer to both.
+
+## v0.56 — 2026-10-03
+
+Card 078: Claude Code's native OpenTelemetry export, routed local-first.
+
+Claude Code emits its own metrics, events and (in beta) traces over OTLP with
+no plugin, hook or custom code. The design the card files is to send everything
+to a collector you own and make the privacy decision there rather than at the
+client — Alloy fans the stream to a local LGTM stack with every content gate
+on, and, if a team ever needs it, to a second branch that strips content-bearing
+attributes first. That second branch is a redaction policy in one reviewable
+file, not a router.
+
+Two traps the docs make easy to miss: `OTEL_EXPORTER_OTLP_PROTOCOL` has no
+default, so nothing exports until it's set; and temporality defaults to delta,
+which makes counters wrong in Prometheus-style backends.
+
+The honest limits are stated in the card: telemetry shows how a prompt variant
+*behaved*, not whether it was *right* — that still needs card 021's verifier —
+and it covers Claude Code sessions only, not application API traffic. Identity
+is never redacted even when content is.
+
+Card 010 gains its third partial answer: audit logging comes off the hooks
+list, since native OTel is richer than a hook payload and managed settings can
+enforce the destination. Hooks remain right for custom payloads, blocking or
+rewriting, and webhooks.
+
+Everything in 078 is `docs`; nothing has been run. GAPS gains a blocker for the
+end-to-end wiring, which clears four of its five open items in one sitting
+against a Watchtower stack that already exists. Flags re-derived: 49.
