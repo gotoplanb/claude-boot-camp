@@ -546,3 +546,28 @@ rewriting, and webhooks.
 Everything in 078 is `docs`; nothing has been run. GAPS gains a blocker for the
 end-to-end wiring, which clears four of its five open items in one sitting
 against a Watchtower stack that already exists. Flags re-derived: 49.
+
+## v0.57 — 2026-10-05
+
+Card 079: the dictation errors you can't see.
+
+Dave dictated that he was "morally neutral" about culture; it transcribed as
+"materialist." He had just said humans are meat robots driven by feedback
+loops — so the wrong word was exactly as coherent as the right one, the
+assistant built on it, and the conversation ran on that footing for thousands
+of words. He found it months later while publishing the transcript.
+
+This is the inverse of card 006 and the causes are opposite. There, weak priors
+on domain proper nouns produce a word that doesn't exist, so the gap shows.
+Here, strong context-conditioned priors produce a word that fits perfectly, so
+nothing reads as wrong and no glossary can help. The claim the card makes is
+that errors are not uniformly distributed — they cluster exactly where the
+conversation has already made a wrong word plausible, which means the errors
+you catch and the errors you make are different populations.
+
+Kept two-sided on Dave's framing: the same mechanism fills a gap when you know
+the idea but can't retrieve the word, which is the condition dictating-while-
+walking produces constantly. It isn't a bug to suppress, it's a bias to know
+you're inside. The only mitigations are adversarial, not lexical.
+
+006 gains a pointer to it. Flags re-derived: 50.

@@ -19,6 +19,8 @@ A large share of this work is dictated — walking, driving, away from a keyboar
 
 The failure is systematic, not random: it hits exactly the words that carry the most meaning — product names, file names, model names — while the surrounding sentence transcribes fine. That makes it *more* dangerous than noisy transcription would be, because the sentence still reads as coherent.
 
+**There is a worse sibling — see card 079.** Everything on this card is the *detectable* class: the term is a non-thing, so the gap shows. When an ordinary word is replaced by another ordinary word that the conversation has already made plausible, none of the mitigations below apply, because there is nothing to look up.
+
 ### Mitigations, cheapest first
 
 1. **Let the model infer from context.** Usually sufficient. "Quadfly OS chat that I called Beta" is unambiguous if the model knows the Alpha/Beta split. Requires no tooling — just enough project context loaded.
