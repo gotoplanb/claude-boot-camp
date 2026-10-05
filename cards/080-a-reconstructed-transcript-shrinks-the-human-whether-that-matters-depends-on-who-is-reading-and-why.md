@@ -49,6 +49,20 @@ So the question to answer *before* exporting: **does my reader care about the pr
 - **Expect to be read as evidence anyway.** A published transcript invites the method reading whether or not you intended it, so the under-representation lands even when the subject matter was the point.
 - **The honest fix, if you can't re-export, is to say so.** Naming the compression in a note costs a paragraph and is more accurate than letting the artifact speak for itself.
 
+## This is an eval problem, not a taste problem
+
+The reason the loss was hard to see is that nobody had declared what the artifact was required to preserve. "It reads fine" was doing all the work.
+
+Name the criterion and it stops being subjective:
+
+> **Does this export preserve source attribution — who contributed which idea?**
+
+Under that criterion, the end-of-chat markdown export **fails**. Not arguably, not as a matter of taste. The human's contributions are present in their effects and absent in the record, which is exactly the thing the criterion asks about.
+
+That's the general case for evals in miniature. An eval isn't only for model outputs — it's for any artifact you intend to rely on. Writing down what the thing has to do, *before* you need it to do that, is what converts "something feels off" into a result you can act on. And it has to be written first: by the time the conversation is long enough to compact, the evidence you'd have measured is already gone.
+
+Card 021's distinction applies directly — verification checks ground truth, but only the ground truth you thought to check. Card 077 is the sibling failure: an eval that runs cleanly while measuring the wrong property.
+
 ## Why this matters
 
 There's a growing habit of publishing AI conversations to show how someone works. This card is the reason that evidence is weaker than it looks: **the format systematically overstates the assistant and understates the human**, for mechanical reasons that have nothing to do with who did the thinking.
