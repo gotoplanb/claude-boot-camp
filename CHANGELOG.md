@@ -571,3 +571,30 @@ walking produces constantly. It isn't a bug to suppress, it's a bias to know
 you're inside. The only mitigations are adversarial, not lexical.
 
 006 gains a pointer to it. Flags re-derived: 50.
+
+## v0.58 — 2026-10-05
+
+Card 080: a reconstructed transcript shrinks the human.
+
+Listening back to the published walking-tour transcript surfaced what reading
+it didn't. The compression is uneven — a third of the audio covered two-thirds
+of the walk — whole exchanges collapse, and the human's turns are flattened to
+their most succinct form while the assistant's survive nearly intact. The
+effects of the human's framing are still visible in the replies; the framing
+itself is gone.
+
+The mechanism is mundane: a summarizer preserves information content, and
+assistant turns are already in summary form while dictated human turns are
+exploratory and normalize to their gist. What gets lost is evidence of
+contribution, which is not the same thing as content.
+
+The load-bearing part is Dave's rule rather than the complaint. Compression is
+fine or fatal depending on purpose and audience: good for conveying the
+subject, destructive for showing how the collaboration worked, fatal for
+representing the experience. The question to answer before exporting is whether
+the reader cares about provenance of contributions or only about the output —
+and a published conversation invites the method reading whether or not that was
+the intent.
+
+079 gains a pointer: there the words are wrong, here the volume is.
+Flags re-derived: 51.
