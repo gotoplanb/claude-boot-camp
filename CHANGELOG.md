@@ -598,3 +598,23 @@ the intent.
 
 079 gains a pointer: there the words are wrong, here the volume is.
 Flags re-derived: 51.
+
+## v0.59 — 2026-10-12
+
+Card 024 records a second instance, found while testing Google Workspace
+connectors for a conference talk: a document created with nothing in it, and a
+Drive write that lands once and not the next time, with no error either way.
+
+Filed with the difference rather than as a match. In Salesforce the call
+genuinely succeeded and was merely insufficient — the report was true. In Drive
+the call reported success and did not happen. Same surface, opposite accuracy
+of the report, and a comparison table makes that explicit rather than letting
+the two blur.
+
+What both support is the sharper generalization: a success report describes the
+call, not the outcome — sometimes because the call succeeded and wasn't enough,
+sometimes because it didn't happen — and from the user's seat those are
+indistinguishable. The defence is the same either way: verify the end state,
+read after write. Card 022's rule arriving from a second direction.
+
+024 widens from Salesforce-only to also cover operating and integrating.

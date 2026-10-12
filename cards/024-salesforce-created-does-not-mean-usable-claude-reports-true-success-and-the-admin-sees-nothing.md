@@ -2,8 +2,8 @@
 
 **Source:** Dave, Claude Boot Camp session 2026-09-11, on why Salesforce work with Claude needs more scaffolding than the API docs suggest.
 **Type:** gotcha
-**Verified:** `ran-it` — hit repeatedly across Dave's Salesforce work; the accumulated fixes live in his `docs/salesforce/lessons-learned.md` (43 documented gotchas at last count).
-**Relevant to:** 6 (Claude + Salesforce)
+**Verified:** `ran-it` — hit repeatedly across Dave's Salesforce work; the accumulated fixes live in his `docs/salesforce/lessons-learned.md` (43 documented gotchas at last count). The Google Drive instance below is also `ran-it`, 2026-10-12.
+**Relevant to:** 6 (Claude + Salesforce), 2 (operating Claude products), 4 (integrating)
 
 ## The setup
 
@@ -39,8 +39,33 @@ Claude won't think to ask about tab assignment or FLS for the same reason a new 
 
 The corpus is the actual deliverable of early Salesforce work — see card 025 for how to mine it, and card 023 for why writing the gotchas down beats instructing Claude to be careful.
 
+## A second instance, with a different cause (2026-10-12)
+
+The same surface turned up in Google Drive, through a connector, while Dave was testing Workspace access for a conference talk:
+
+- A document gets **created with nothing in it**.
+- A write **lands once and not the next time**, with no error either way.
+
+**The mechanism is not the same, and the difference matters.** In the Salesforce case the call genuinely succeeded — the report was true and merely insufficient, because configuration is layered on top of creation. In the Drive case the call reported success and **did not happen**. Something actually failed, quietly.
+
+What the two share is the part that defeats you:
+
+| | Salesforce | Drive connector |
+|---|---|---|
+| Did the operation succeed? | Yes | No |
+| Was the report accurate? | Yes | **No** |
+| Did an error surface? | No | No |
+| What the user sees | An empty app | An empty document |
+| Does "catch the false claim" help? | No — there isn't one | No — nothing distinguishes it from a real success |
+
+So the generalization both cases support is narrower and sharper than either alone:
+
+> **A success report describes the call, not the outcome.** Sometimes because the call succeeded and wasn't sufficient. Sometimes because the call didn't happen. From where you're sitting these are indistinguishable, and the defence is identical either way.
+
+**Verify the end state, not the report** — read after write, every time. That's card 022's rule arriving from a second direction, and it's the practical cost nobody demos: a write workflow through an agent is really a write-then-read workflow.
+
 ## Why this matters
 
-It generalises past Salesforce to any platform with **configuration layered on top of creation** — CRMs, identity providers, cloud consoles, anything with a permissions model. The API call succeeds, the entity exists, and it's inert until three other things are also true.
+It generalises past Salesforce twice over — to any platform with **configuration layered on top of creation** — CRMs, identity providers, cloud consoles, anything with a permissions model. The API call succeeds, the entity exists, and it's inert until three other things are also true.
 
 For a consultant or SI, this is the difference between demoing an efficiency gain and demoing an embarrassment: the client logs in, sees an empty app, and the fact that the metadata deployed cleanly is no comfort at all.
