@@ -683,3 +683,33 @@ permitted by the customer's enterprise settings, with no good workaround.
 Folded into the customer-facts blocker in GAPS.
 
 073, 086 and 087 gain pointers. Flags re-derived: 57.
+
+## v0.62 — 2026-11-01
+
+Card 091: distribute at the rate of change.
+
+A third axis for the question 073 and 090 kept circling. Match the channel's
+clock to the artifact's clock — stable, org-wide, codebase-independent material
+to the governed channel, where slow change is a feature; fast-moving material
+coupled to the code ships with the code.
+
+The coupling argument turns out to be stronger than the speed one. A recipe
+depends on current metadata, current CLI behaviour and current ticket
+templates, so it is only correct as a set. Putting it on a separate channel
+manufactures card 085's drift deliberately, inside your own tooling. So the
+test is not only how often this changes but whether it has to change at the
+same moment as something else.
+
+Also a correction: 073 and 090 both read as pick-a-channel decisions. The tiers
+are complements. Org-level carries general standards, repo-level sits on top
+and stays specific, and the repo layer should extend rather than restate.
+Both cards gain that pointer.
+
+086's stamping bullet becomes pin-at-*claim* rather than at build — once
+recipes move fast, a recipe changing mid-run must not switch a half-finished
+ticket onto different instructions.
+
+Held `inferred`: the engagement is not in production, and "recipes adjusted
+every couple of weeks at slowest" is an estimate of a system that does not
+exist yet. If the real rate turns out monthly, the argument weakens and the org
+channel becomes viable — flagged on the card. Flags re-derived: 58.

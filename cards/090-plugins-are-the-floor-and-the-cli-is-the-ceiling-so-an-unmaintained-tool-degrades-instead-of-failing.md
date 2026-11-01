@@ -34,6 +34,10 @@ Build only the CLI and you've handed over a dependency with a maintainer-shaped 
 - **Version them together.** One repo, one version, one review — a recipe change and its code change land in the same pull request.
 - **Changes go through review.** Recipe edits arrive as PRs, which gives the customer an audit trail and a natural place for admins to participate in their own process.
 
+## The tiers are complements — see card 091
+
+This card argues for repo-level distribution of *these* plugins and can read as a case against the org channel. It isn't. Card 091 draws the line properly: stable, org-wide, codebase-independent material belongs on the governed channel, where slow change is a feature; fast-moving material coupled to the code belongs with the code. Both tiers load, and the repo layer should extend the org layer rather than restate it.
+
 ## The precondition — ask it in discovery
 
 **Repo-level plugins must be permitted by the customer's enterprise settings.** There's no good workaround; routing distribution through an org-level channel is too slow to be the primary path.

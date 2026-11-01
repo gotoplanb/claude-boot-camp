@@ -22,7 +22,7 @@ Card 060 sorts distribution by the **Claude org boundary**: just you → your te
 
 **The deciding factor is audience, not preference.**
 
-**There is a second argument, added later — see card 090.** Even where both channels reach everyone, an org-level channel is *slower*, and that throttles iteration on anything changing at the pace of the code. Audience decides whether a channel works at all; velocity decides which one you want.
+**Two arguments were added later.** Card 090: even where both channels reach everyone, an org-level channel is *slower*, and that throttles iteration on anything changing at the pace of the code. Card 091: the sharper axis is **rate of change and coupling** — and the two tiers are complements rather than alternatives, so the table below is about which channel suits a given artifact, not about picking one channel for everything.
 
 > If the only people who'd ever need the skill are people already checking out that repo, repo-root skills are strictly simpler — **don't package a plugin at all.**
 

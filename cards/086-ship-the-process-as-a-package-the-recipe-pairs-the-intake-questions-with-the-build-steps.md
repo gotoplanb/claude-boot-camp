@@ -19,7 +19,7 @@ Keeping them in one artifact is what stops them drifting. Split them and the que
 
 - **A skill handles conversational intake** and plain-language explanation. It asks the clarifying questions, so ambiguity is caught *before* build time. That's grooming (card 081's front) made cheap and repeatable — and it's a correct use of a skill, because deciding which question to ask next is judgment.
 - **A custom CLI handles the deterministic steps**: validating tickets, calling the tracker, running platform commands. See card 087 for what that CLI should look like — and **card 090 for why the skill must still describe the whole recipe anyway**, so an unmaintained CLI degrades the process instead of stopping it.
-- **Stamp the recipe version on each ticket.** Without it, a ticket built last month is unreproducible — you can't tell which version of the process produced it, and card 085's drift problem now applies to your own tooling.
+- **Pin the recipe version when a ticket is *claimed*, not when it's built.** Without a stamp, a ticket built last month is unreproducible — you can't tell which version of the process produced it, and card 085's drift problem now applies to your own tooling. Pinning at *claim* rather than at build matters once recipes move fast (card 091): a recipe that changes mid-run must not switch a half-finished ticket onto different instructions.
 - **Separate environments by role.** The requester-facing environment has tracker access and *no org credentials*; the build environment has sandbox access. That's card 039's least-privilege argument applied to the two halves of your own pipeline rather than to a vendor's product.
 
 ## The division that runs through all of it
