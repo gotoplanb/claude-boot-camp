@@ -38,6 +38,10 @@ A CLI an agent drives is a different artifact from one a human drives. It needs:
 - **Put one seam at the subprocess boundary** so recipe logic is unit-testable against a fake runner. One seam, deliberately placed, is what makes the rest testable without a live org.
 - **Keep logic out of Makefiles.** A Makefile that grew conditionals is a program in a language chosen by accident.
 
+## The CLI should not be the only layer
+
+Everything above assumes the CLI exists and works. Card 090 is the counterweight: a customer can depend on a custom CLI without being able to support it, so the recipe's skill should describe the whole process in prose and *call* the CLI when it's available. Build the ceiling, but leave a floor under it.
+
 ## Why this matters
 
 Most of this is ordinary CLI craft, which is the point — card 044's observation again, that almost none of this is AI-specific. What *is* specific is the weighting: exit codes, JSON and idempotence matter more than usual because the caller can't improvise around a surprise, and the context cost of a tool definition is a real recurring price that a `--help` page doesn't charge.

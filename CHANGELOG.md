@@ -658,3 +658,28 @@ practice would have been the easy error here.
 GAPS gains two blockers: the engagement itself, which converts most of the
 batch, and a short list of customer-environment facts to establish before
 designing around them. Flags re-derived: 55.
+
+## v0.61 — 2026-11-01
+
+Card 090: plugins are the floor, the CLI is the ceiling.
+
+The layering cards 086 and 087 left open. Skills and recipes commit to the repo
+root so any checkout has them; the CLI adds determinism on top. The property
+this buys is graceful degradation — an unmaintained CLI makes the process
+slower and less deterministic rather than broken, because each recipe's skill
+describes the whole thing in prose and merely *calls* the CLI when it exists.
+
+Three arguments carry it. Distribution rides with the code, because an
+org-level channel throttles anything iterating at the pace of the code — a
+velocity argument that 073 didn't have, where the deciding factor was audience.
+Maintainability matches the audience, so the layer changing most often is also
+the one non-engineers can edit through a PR. And it answers the handover
+problem: a customer can depend on a custom CLI without being able to support
+it, so shipping only the CLI hands over a dependency with a maintainer-shaped
+hole in it.
+
+Precondition, stated as a discovery go/no-go: repo-level plugins must be
+permitted by the customer's enterprise settings, with no good workaround.
+Folded into the customer-facts blocker in GAPS.
+
+073, 086 and 087 gain pointers. Flags re-derived: 57.

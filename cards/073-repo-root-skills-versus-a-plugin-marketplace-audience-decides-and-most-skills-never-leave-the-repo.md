@@ -22,6 +22,8 @@ Card 060 sorts distribution by the **Claude org boundary**: just you → your te
 
 **The deciding factor is audience, not preference.**
 
+**There is a second argument, added later — see card 090.** Even where both channels reach everyone, an org-level channel is *slower*, and that throttles iteration on anything changing at the pace of the code. Audience decides whether a channel works at all; velocity decides which one you want.
+
 > If the only people who'd ever need the skill are people already checking out that repo, repo-root skills are strictly simpler — **don't package a plugin at all.**
 
 Save the plugin/marketplace step for skills that must reach beyond a single codebase. Packaging something that never leaves its repo buys you a manifest, a catalog, a publish step and an install step, in exchange for nothing — the clone already delivered it.
