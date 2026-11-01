@@ -42,6 +42,8 @@ This card argues for repo-level distribution of *these* plugins and can read as 
 
 **Repo-level plugins must be permitted by the customer's enterprise settings.** There's no good workaround; routing distribution through an org-level channel is too slow to be the primary path.
 
+**Refined by card 093: this gates phase two, not day one.** While the only users are developers pulling from GitHub, they control their own configuration and get the skills by checkout. The setting matters when *customer admins* start working in cloud sessions on the customer's tenant — so a "no" here delays the handover, it doesn't stop the build.
+
 So this is a **go/no-go question, asked early**, because the rest of the structure depends on the answer. If it's blocked, the recipes still exist as markdown in the repo and a session can be pointed at them — a real fallback, but weaker and less ergonomic.
 
 Worth noticing that the fallback is *the floor without the automatic loading*. The layering survives even when the mechanism doesn't — which is **consistent with** the layering being right, though not evidence for it. A fallback existing says nothing about whether the design above it is correct.

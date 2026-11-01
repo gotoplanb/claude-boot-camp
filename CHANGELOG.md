@@ -740,3 +740,32 @@ perishable mechanism.
 Also fixed the integrity checker: matching any three-digit number flagged "340+
 cards", HTTP 404 and version strings as dangling references. Scoped to
 `card(s) NNN`, the corpus is clean. Flags re-derived: 59.
+
+## v0.64 — 2026-11-01
+
+Card 093, and a correction it forced on 092 and 090.
+
+**093** is the runnable instrument: the full kickoff interview, grouped by what
+each answer blocks, written to be pasted into a session so Claude conducts it
+one group at a time, records answers, marks what is still open, and does not
+guess. Five groups — day one access, how they work today, observability, phase
+two gates, handover — plus Salesforce prerequisites the earlier cards missed
+entirely (Dev Hub, scratch org limits, sandbox refresh and data, change
+windows, deployment approval).
+
+**The correction.** Sorting by *when* a question bites exposed an error in 092
+and an overstatement in 090. Repo-level plugin permissions and enterprise
+cloud-session settings were filed as fatal to the whole design. They are not:
+while the only users are developers pulling from GitHub, those settings block
+nothing, because developers control their own configuration and get the skills
+by checkout. They gate **phase two** — customer admins working in cloud
+sessions. A "no" there delays handover rather than stopping the build, and
+treating it as a day-one blocker was a reason not to start that didn't exist.
+092's table gains a "when it bites" column; 090's precondition gains the
+qualifier.
+
+The two cards are kept distinct with a relationship note in both: 092 is the
+lens (which answers are fatal), 093 is the instrument (the interview to run).
+092's shaping list collapses to a pointer, since 093 carries it in full.
+
+Flags re-derived: 60.
