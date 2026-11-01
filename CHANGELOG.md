@@ -618,3 +618,43 @@ indistinguishable. The defence is the same either way: verify the end state,
 read after write. Card 022's rule arriving from a second direction.
 
 024 widens from Salesforce-only to also cover operating and integrating.
+
+## v0.60 — 2026-11-01
+
+Cards 081–089, from a source document of working notes for a Salesforce
+automation engagement: strategies rather than prompts or implementation.
+
+- **081** bookended autonomy — human owns grooming and acceptance, agent owns
+  the middle. Cheap solo because context never leaves one head; the four things
+  that break at two or more people are all handoffs.
+- **082** put the agent next to the thing it manipulates. Three variables, and
+  the counterintuitive one: a managed laptop is the *less* isolated option once
+  an agent holds the user's ambient permissions.
+- **083** parallelism has two sources, and the contended resource in platform
+  work is the shared org rather than the files — so git doesn't help and the
+  isolation unit is a scratch org per agent. A spreadsheet is racy for claiming.
+- **084** recipes graduate from local to cloud. The unit promoted is the ticket
+  type, criterion one is card 020's verifier test verbatim, and the value to a
+  customer is a staged path to trust rather than a day-one leap.
+- **085** the baseline is only true until someone clicks something. Card 014's
+  drift one layer out: there the model holds a stale snapshot, here the repo
+  does, and the system has other authors.
+- **086** and **087** split the source's "ship the process as a package" — 086
+  is the recipe pairing intake questions with build steps, 087 is the CLI half
+  (what MCP has to earn when a shell exists, and what an agent-driven CLI owes
+  you).
+- **088** screenshots are evidence for a human, not proof. The deterministic
+  check decides correctness; the screenshot makes acceptance possible for a
+  reviewer who isn't a developer.
+- **089** one CLI is one chokepoint, which makes it the place to emit telemetry
+  — including the stance against selling a backend by default.
+
+**Verification note.** Most of this batch is `inferred` or `decision`, and the
+head matter says so per card. The engagement has not run. What is `ran-it` is
+the solo half of 081, local contention in 083, the engineering practices in
+087, and screenshot capture in 088. Marking a design document as observed
+practice would have been the easy error here.
+
+GAPS gains two blockers: the engagement itself, which converts most of the
+batch, and a short list of customer-environment facts to establish before
+designing around them. Flags re-derived: 55.
