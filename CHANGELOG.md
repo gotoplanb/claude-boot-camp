@@ -713,3 +713,30 @@ Held `inferred`: the engagement is not in production, and "recipes adjusted
 every couple of weeks at slowest" is an estimate of a system that does not
 exist yet. If the real rate turns out monthly, the argument weakens and the org
 channel becomes viable — flagged on the card. Flags re-derived: 58.
+
+## v0.63 — 2026-11-01
+
+Card 092, plus a correction Beta caught.
+
+**Correction.** Card 090 said the fallback surviving without plugin loading was
+"some evidence the layering is the right idea." It isn't. A fallback existing
+says nothing about whether the design above it is correct. Softened to
+"consistent with," which is what the observation actually supports.
+
+**Card 092** gives the engagement's open questions a home. They were scattered
+across six cards and GAPS with no single place to look, and the useful split
+turns out not to be by topic but by consequence: some answers are go/no-go and
+kill a design, others merely shape it. Repo-level plugin permissions, cloud
+session settings, network allowlist, a real tracker, role-separable
+environments — those five decide what is buildable. Monitoring, GitHub
+scanning, the Jira CLI and the real recipe edit rate shape it.
+
+Two other suggestions declined as duplicates. The autonomy dial — move process
+into code as autonomy rises — is card 076's table plus 090's fallback clause,
+and a separate card would restate both. "Treat extensions as hypotheses where
+evidence is thin" is card 072, which already separates durable judgment from
+perishable mechanism.
+
+Also fixed the integrity checker: matching any three-digit number flagged "340+
+cards", HTTP 404 and version strings as dangling references. Scoped to
+`card(s) NNN`, the corpus is clean. Flags re-derived: 59.

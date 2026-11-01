@@ -44,7 +44,7 @@ This card argues for repo-level distribution of *these* plugins and can read as 
 
 So this is a **go/no-go question, asked early**, because the rest of the structure depends on the answer. If it's blocked, the recipes still exist as markdown in the repo and a session can be pointed at them — a real fallback, but weaker and less ergonomic.
 
-Worth noticing that the fallback is *the floor without the automatic loading*. The layering survives even when the mechanism doesn't, which is some evidence the layering is the right idea.
+Worth noticing that the fallback is *the floor without the automatic loading*. The layering survives even when the mechanism doesn't — which is **consistent with** the layering being right, though not evidence for it. A fallback existing says nothing about whether the design above it is correct.
 
 ## The takeaway
 

@@ -24,7 +24,7 @@ These matter more than any single gap.
 
 ## The open questions are fewer than they look
 
-58 inline `confirm-this` flags across the cards plus 5 open issues reads as 63 threads. Grouped by *what would actually resolve them*, it's about **eleven** (card 057). Re-derive the count rather than incrementing it by hand — `grep -ro '\[confirm-this:' cards/ | wc -l`:
+59 inline `confirm-this` flags across the cards plus 5 open issues reads as 64 threads. Grouped by *what would actually resolve them*, it's about **eleven** (card 057). Re-derive the count rather than incrementing it by hand — `grep -ro '\[confirm-this:' cards/ | wc -l`:
 
 | Blocker | Resolves | Effort |
 |---|---|---|
@@ -37,7 +37,7 @@ These matter more than any single gap.
 | One repo-committed skill, cloned elsewhere + a deliberate name collision | cards 073, 074 — **both are `docs` only and 074's precedence order is counterintuitive** | one sitting |
 | Wire Claude Code OTel → Alloy → Loki/Mimir/Tempo end to end | card 078 — clears 4 of its 5 open items at once (what lands, Mimir temporality, Tempo attribute limits, the experiment-tagging loop). Leftovers: whether Sumo's collector takes OTLP/HTTP, and Remote Control inheritance | one sitting, **Watchtower already exists** |
 | The Salesforce engagement itself — one ticket type through the ladder, attended | cards 081, 082, 084, 085, 088, 091 — **almost the whole 081-091 batch is `inferred` design**, and one real engagement converts most of it | the engagement |
-| Customer-environment facts, before designing around them | Enterprise settings for cloud sessions/secrets/connectors (082); GitHub code + secret scanning on private repos; Jira CLI maintenance and approval, with thin REST calls as the fallback; current Salesforce DevOps Center capabilities (085); **whether enterprise settings permit repo-level plugins — go/no-go for card 090's whole structure** | an afternoon of asking |
+| Customer-environment facts, before designing around them — **card 092 is now the checklist** | Enterprise settings for cloud sessions/secrets/connectors (082); GitHub code + secret scanning on private repos; Jira CLI maintenance and approval, with thin REST calls as the fallback; current Salesforce DevOps Center capabilities (085); **whether enterprise settings permit repo-level plugins — go/no-go for card 090's whole structure** | an afternoon of asking |
 | Small standalone trials | cards 003, 006, 012, 016, 020, 059, 062, 064, 075, 077, 079, 080 | hours each |
 | **Not actionable — waiting on someone else** | cards 002, 013, 034, 035, 036, 055, 061 | watch items, not work |
 
